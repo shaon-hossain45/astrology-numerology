@@ -52,6 +52,26 @@ class Astrology_Numerology_Public {
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
 
+		$this->public_load_dependencies();
+
+		if ( class_exists( 'Astrology_Numerology_Public_Display' ) ) {
+			new Astrology_Numerology_Public_Display();
+		}
+	}
+
+	/**
+	 * Directory path called
+	 *
+	 * @since    1.0.0
+	 * @param      string    $plugin_name       The name of this plugin.
+	 * @param      string    $version    The version of this plugin.
+	 */
+	private function public_load_dependencies() {
+		/**
+		 * The class responsible for orchestrating the actions and filters of the
+		 * core plugin.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/partials/astrology-numerology-public-display.php';
 	}
 
 	/**

@@ -2,3 +2,61 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
+
+.fAohjg {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.iWPxGG {
+    width: 48%;
+}
+
+.iWPxGG {
+    padding: 12px 0px;
+}
+
+.iQwXZz {
+    display: block;
+}
+
+.iWPxGG h2 {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 8px 0px 0px;
+    padding: 0px 0.5em 0px 0px;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgb(0, 0, 0);
+}
+
+.iWPxGG span {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 8px 0px 0px;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgb(0, 0, 0);
+}
+
+.irIkok {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 8px 0px 0px;
+    padding: 0px;
+}
+
+.eoPZeR {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 4px 0px 0px;
+    padding: 0px;
+    border-bottom: 2px solid rgb(130, 73, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none !important;
+}
