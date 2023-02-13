@@ -26,7 +26,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display' ) ) {
 		public function __construct( ) {
 
 			add_shortcode( 'astrology_numerology', array( $this, 'template_shortcode' ) );
-            //add_action("init", array( $this, "woocommerce_account_navigation"));
+
 		}
 
 
@@ -44,13 +44,13 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display' ) ) {
 		// Attributes
 		$atts = shortcode_atts(
 			array(
-				'type' => '',
+				'type' => null,
 				'label' => 'tomorrow content',
 			),
 			$atts,
 			'shortcode'
 		);
-		var_dump($atts['type']);
+
 if( $atts['type'] == "tomorrow" ){
 
             echo '<nav class="HoroscopeNav__Nav-sc-1472j5k-0 gbbOvV">
@@ -98,7 +98,7 @@ if( $atts['type'] == "tomorrow" ){
 }
 
 
-		/**
+/**
 		 * Setup query to show the ‘services’ post type with ‘8’ posts.
 		 * Output the title with an excerpt.
 		 */
@@ -109,6 +109,19 @@ if( $atts['type'] == "tomorrow" ){
 			'orderby' => 'title',
 			'order' => 'ASC',
 		);
+if( $atts['type'] == "tomorrow" ){
+	
+		$loop = new WP_Query( $args );
+
+		$output = '';
+		$output .= '<section class="HoroscopeIndex__Section-sc-102m0yr-0 fAohjg">';
+		while ( $loop->have_posts() ) : $loop->the_post();
+		$output .='<article class="HoroscopeIndex__Item-sc-102m0yr-1 iWPxGG"><a href="'.get_the_permalink().'" data-tracking-link-name="horoscope_aries" class="HoroscopeIndex__LinkOne-sc-102m0yr-2 iQwXZz"><figure><img src="https://honey.nine.com.au/assets/imgs/horoscope/aries-daily-horoscope.7b1e71d2.png" loading="lazy" alt="Aries Horoscope"></figure><h2>'.get_the_title().'</h2><span>(Mar 21 - Apr 20)</span></a><p class="HoroscopeIndex__Teaser-sc-102m0yr-3 irIkok">“Theres a tendency to be attracted to extreme points of view. You may not be in a compromising mood and can be adamant about the correctness of your b...”</p><a href="/horoscope/aries" data-tracking-link-name="horoscope_aries" class="HoroscopeIndex__LinkTwo-sc-102m0yr-4 eoPZeR">View Aries Horoscope</a></article>';
+		endwhile;
+		$output .= '</section>';
+		//return $output;
+		wp_reset_postdata();
+	}else{
 
 		$loop = new WP_Query( $args );
 
@@ -120,6 +133,9 @@ if( $atts['type'] == "tomorrow" ){
 		$output .= '</section>';
 		//return $output;
 		wp_reset_postdata();
+		
+	}
+
 
 			}
 	
