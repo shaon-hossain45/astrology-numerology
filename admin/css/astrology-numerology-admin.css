@@ -2,3 +2,13 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+.custom-padding {
+    margin-bottom: 9px;
+}
+
+input.error,
+textarea.error,
+.wp-editor-container.error {
+    border-color: red !important;
+}

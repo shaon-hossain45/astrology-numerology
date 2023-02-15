@@ -25,13 +25,14 @@ class Astrology_Numerology_Admin_Display {
 
 		$this->admin_display_load_dependencies();
 
-		// Custom post type
-		if ( class_exists( 'CptBaseSetup' ) ) {
-			$cptBaseObj = new CptBaseSetup();
+		// Menu Action setup
+		if ( class_exists( 'MenuActionSetup' ) ) {
+			$MenuActionSetupObj = new MenuActionSetup();
 		}
+
 		// Menu setup
 		if ( class_exists( 'MenuSetup' ) ) {
-			$MenuPageObj = new MenuSetup();
+			$MenuPageObj = new MenuSetup($MenuActionSetupObj);
 		}
 	}
 
@@ -56,9 +57,8 @@ class Astrology_Numerology_Admin_Display {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		//require_once plugin_dir_path( dirname( __FILE__ ) ) . 'partials/menu/class-menu-base.php';
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'partials/menu/class-menu.php';
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'partials/cpt/custom-post-base.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'partials/menu/astrology-numerology-admin-menu-action.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'partials/menu/astrology-numerology-admin-menu.php';
 	}
 
 }
