@@ -66,6 +66,15 @@ if ( ! class_exists( 'MenuSetup' ) ) {
 
 			add_submenu_page(
 				'astrology_numerology',
+				'Numerology',
+				'Numerologys ',
+				'manage_options',
+				'numerologys',
+				array( $this->functional, 'astrology_numerology_submenu_page_numerologys' ),
+			);
+
+			add_submenu_page(
+				'astrology_numerology',
 				'Shortcodes',
 				'Shortcodes',
 				'manage_options',

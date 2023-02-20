@@ -273,6 +273,598 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 		}
 	}
 
+
+		/**
+		 * Sub menu page function callback
+		 *
+		 * @return void
+		 */
+		public function astrology_numerology_submenu_page_numerologys() {
+			?>
+			<h1 class="wp-heading-inline">Numerology</h1>
+
+			<div id="elementor-template-library-tabs-wrapper" class="nav-tab-wrapper">
+				<a class="nav-tab nav-tab-active" href="#tab-day">Day</a>
+				<a class="nav-tab" href="#tab-week">Week</a>
+				<a class="nav-tab" href="#tab-month">Month</a>
+				<a class="nav-tab" href="#tab-year">Year</a>
+			</div>
+			<form id="elementor-settings-form" method="post" action="options.php#day">
+
+				<input type="hidden" name="option_page" value="elementor"><input type="hidden" name="action" value="update">
+    			<input type="hidden" id="_wpnonce" name="_wpnonce" value="051584a3b3">
+    			<input type="hidden" name="_wp_http_referer" value="/wordpress/wp-admin/admin.php?page=elementor">
+
+
+
+				<div id="tab-day" class="settings-form-page active">
+					<div class="metabox-holder" id="templatestuff">
+						<div id="post-body">
+							<div id="post-body-content">
+								<div class="normal-sortables">
+									<div id="template_form_meta_box" class="postbox">
+										<div class="postbox-header">
+											<h2 class="hndle">Create Day</h2>
+										</div>
+										<div class="inside">
+											<table cellspacing="2" cellpadding="5" style="width: 100%;" class="form-table">
+												<tbody>
+												<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( 'Template Title', 'astrology_numerology' ); ?><span>*</span></label>
+														</th>
+														<td>
+															<input id="template_title" name="template_title" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( 'Template Title', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="content"><?php _e( 'Template Description', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<?php
+																$content = "";
+																$custom_editor_id = "template_description";
+																$custom_editor_name = "template_description";
+																$args = array(
+																	'media_buttons' => false, // This setting removes the media button.
+																	'textarea_name' => $custom_editor_name, // Set custom name.
+																	'textarea_rows' => get_option('default_post_edit_rows', 10), //Determine the number of rows.
+																	'quicktags' => false, // Remove view as HTML button.
+																	);
+																wp_editor( $content, $custom_editor_id, $args );
+																?>
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '1st Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_1st_variation" class="custom-padding" name="numerology_1st_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '1st Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '2nd Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_2nd_variation" class="custom-padding" name="numerology_2nd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '2nd Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '3rd Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_3rd_variation" class="custom-padding" name="numerology_3rd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '3rd Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '4th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_4th_variation" class="custom-padding" name="numerology_4th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '4th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '5th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_5th_variation" class="custom-padding" name="numerology_5th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '5th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '6th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_6th_variation" class="custom-padding" name="numerology_6th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '6th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '7th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_7th_variation" class="custom-padding" name="numerology_7th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '7th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '8th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_8th_variation" class="custom-padding" name="numerology_8th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '8th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '9th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_9th_variation" class="custom-padding" name="numerology_9th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '9th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="content"><?php _e( 'Template Bottom Description', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<?php
+																$content_bottom = "";
+																$custom_editor_bottom_id = "template_bottom_description";
+																$custom_editor_bottom_name = "template_bottom_description";
+																$args = array(
+																	'media_buttons' => false, // This setting removes the media button.
+																	'textarea_name' => $custom_editor_bottom_name, // Set custom name.
+																	'textarea_rows' => get_option('default_post_edit_rows', 5), //Determine the number of rows.
+																	'quicktags' => false, // Remove view as HTML button.
+																	);
+																wp_editor( $content_bottom, $custom_editor_bottom_id, $args );
+																?>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="tab-week" class="settings-form-page">
+					<div class="metabox-holder" id="templatestuff">
+						<div id="post-body">
+							<div id="post-body-content">
+								<div class="normal-sortables">
+									<div id="template_form_meta_box" class="postbox">
+										<div class="postbox-header">
+											<h2 class="hndle">Create Week</h2>
+										</div>
+										<div class="inside">
+											<table cellspacing="2" cellpadding="5" style="width: 100%;" class="form-table">
+												<tbody>
+												<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( 'Template Title', 'astrology_numerology' ); ?><span>*</span></label>
+														</th>
+														<td>
+															<input id="template_title" name="template_title" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( 'Template Title', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="content"><?php _e( 'Template Description', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<?php
+																$content = "";
+																$custom_editor_id = "template_description";
+																$custom_editor_name = "template_description";
+																$args = array(
+																	'media_buttons' => false, // This setting removes the media button.
+																	'textarea_name' => $custom_editor_name, // Set custom name.
+																	'textarea_rows' => get_option('default_post_edit_rows', 10), //Determine the number of rows.
+																	'quicktags' => false, // Remove view as HTML button.
+																	);
+																wp_editor( $content, $custom_editor_id, $args );
+																?>
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '1st Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_1st_variation" class="custom-padding" name="numerology_1st_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '1st Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '2nd Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_2nd_variation" class="custom-padding" name="numerology_2nd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '2nd Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '3rd Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_3rd_variation" class="custom-padding" name="numerology_3rd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '3rd Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '4th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_4th_variation" class="custom-padding" name="numerology_4th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '4th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '5th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_5th_variation" class="custom-padding" name="numerology_5th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '5th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '6th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_6th_variation" class="custom-padding" name="numerology_6th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '6th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '7th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_7th_variation" class="custom-padding" name="numerology_7th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '7th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '8th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_8th_variation" class="custom-padding" name="numerology_8th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '8th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '9th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_9th_variation" class="custom-padding" name="numerology_9th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '9th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="content"><?php _e( 'Template Bottom Description', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<?php
+																$content_bottom = "";
+																$custom_editor_bottom_id = "template_bottom_description";
+																$custom_editor_bottom_name = "template_bottom_description";
+																$args = array(
+																	'media_buttons' => false, // This setting removes the media button.
+																	'textarea_name' => $custom_editor_bottom_name, // Set custom name.
+																	'textarea_rows' => get_option('default_post_edit_rows', 5), //Determine the number of rows.
+																	'quicktags' => false, // Remove view as HTML button.
+																	);
+																wp_editor( $content_bottom, $custom_editor_bottom_id, $args );
+																?>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="tab-month" class="settings-form-page">
+					<div class="metabox-holder" id="templatestuff">
+						<div id="post-body">
+							<div id="post-body-content">
+								<div class="normal-sortables">
+									<div id="template_form_meta_box" class="postbox">
+										<div class="postbox-header">
+											<h2 class="hndle">Create Month</h2>
+										</div>
+										<div class="inside">
+											<table cellspacing="2" cellpadding="5" style="width: 100%;" class="form-table">
+												<tbody>
+												<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( 'Template Title', 'astrology_numerology' ); ?><span>*</span></label>
+														</th>
+														<td>
+															<input id="template_title" name="template_title" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( 'Template Title', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="content"><?php _e( 'Template Description', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<?php
+																$content = "";
+																$custom_editor_id = "template_description";
+																$custom_editor_name = "template_description";
+																$args = array(
+																	'media_buttons' => false, // This setting removes the media button.
+																	'textarea_name' => $custom_editor_name, // Set custom name.
+																	'textarea_rows' => get_option('default_post_edit_rows', 10), //Determine the number of rows.
+																	'quicktags' => false, // Remove view as HTML button.
+																	);
+																wp_editor( $content, $custom_editor_id, $args );
+																?>
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '1st Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_1st_variation" class="custom-padding" name="numerology_1st_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '1st Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '2nd Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_2nd_variation" class="custom-padding" name="numerology_2nd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '2nd Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '3rd Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_3rd_variation" class="custom-padding" name="numerology_3rd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '3rd Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '4th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_4th_variation" class="custom-padding" name="numerology_4th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '4th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '5th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_5th_variation" class="custom-padding" name="numerology_5th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '5th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '6th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_6th_variation" class="custom-padding" name="numerology_6th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '6th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '7th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_7th_variation" class="custom-padding" name="numerology_7th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '7th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '8th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_8th_variation" class="custom-padding" name="numerology_8th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '8th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '9th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_9th_variation" class="custom-padding" name="numerology_9th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '9th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="content"><?php _e( 'Template Bottom Description', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<?php
+																$content_bottom = "";
+																$custom_editor_bottom_id = "template_bottom_description";
+																$custom_editor_bottom_name = "template_bottom_description";
+																$args = array(
+																	'media_buttons' => false, // This setting removes the media button.
+																	'textarea_name' => $custom_editor_bottom_name, // Set custom name.
+																	'textarea_rows' => get_option('default_post_edit_rows', 5), //Determine the number of rows.
+																	'quicktags' => false, // Remove view as HTML button.
+																	);
+																wp_editor( $content_bottom, $custom_editor_bottom_id, $args );
+																?>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="tab-year" class="settings-form-page">
+					<div class="metabox-holder" id="templatestuff">
+						<div id="post-body">
+							<div id="post-body-content">
+								<div class="normal-sortables">
+									<div id="template_form_meta_box" class="postbox">
+										<div class="postbox-header">
+											<h2 class="hndle">Create Year</h2>
+										</div>
+										<div class="inside">
+											<table cellspacing="2" cellpadding="5" style="width: 100%;" class="form-table">
+												<tbody>
+												<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( 'Template Title', 'astrology_numerology' ); ?><span>*</span></label>
+														</th>
+														<td>
+															<input id="template_title" name="template_title" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( 'Template Title', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="content"><?php _e( 'Template Description', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<?php
+																$content = "";
+																$custom_editor_id = "template_description";
+																$custom_editor_name = "template_description";
+																$args = array(
+																	'media_buttons' => false, // This setting removes the media button.
+																	'textarea_name' => $custom_editor_name, // Set custom name.
+																	'textarea_rows' => get_option('default_post_edit_rows', 10), //Determine the number of rows.
+																	'quicktags' => false, // Remove view as HTML button.
+																	);
+																wp_editor( $content, $custom_editor_id, $args );
+																?>
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '1st Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_1st_variation" class="custom-padding" name="numerology_1st_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '1st Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '2nd Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_2nd_variation" class="custom-padding" name="numerology_2nd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '2nd Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '3rd Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_3rd_variation" class="custom-padding" name="numerology_3rd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '3rd Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '4th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_4th_variation" class="custom-padding" name="numerology_4th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '4th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '5th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_5th_variation" class="custom-padding" name="numerology_5th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '5th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '6th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_6th_variation" class="custom-padding" name="numerology_6th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '6th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '7th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_7th_variation" class="custom-padding" name="numerology_7th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '7th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '8th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_8th_variation" class="custom-padding" name="numerology_8th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '8th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="title"><?php _e( '9th Variation', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<input id="numerology_9th_variation" class="custom-padding" name="numerology_9th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '9th Variation Information', 'astrology_numerology' ); ?>">
+														</td>
+													</tr>
+													<tr class="form-field">
+														<th valign="top" scope="row">
+															<label for="content"><?php _e( 'Template Bottom Description', 'astrology_numerology' ); ?></label>
+														</th>
+														<td>
+															<?php
+																$content_bottom = "";
+																$custom_editor_bottom_id = "template_bottom_description";
+																$custom_editor_bottom_name = "template_bottom_description";
+																$args = array(
+																	'media_buttons' => false, // This setting removes the media button.
+																	'textarea_name' => $custom_editor_bottom_name, // Set custom name.
+																	'textarea_rows' => get_option('default_post_edit_rows', 5), //Determine the number of rows.
+																	'quicktags' => false, // Remove view as HTML button.
+																	);
+																wp_editor( $content_bottom, $custom_editor_bottom_id, $args );
+																?>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="Save Changes"></p>
+			</form>
+<?php
+
+
+		}
+
+
 		/**
 		 * Sub menu page function callback
 		 *
@@ -281,6 +873,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 		public function astrology_numerology_submenu_page_shortcode() {
 			echo 'sha2';
 		}
+
+
 
 
 	}

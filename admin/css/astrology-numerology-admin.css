@@ -12,3 +12,11 @@ textarea.error,
 .wp-editor-container.error {
     border-color: red !important;
 }
+
+.settings-form-page {
+    display: none;
+}
+
+.settings-form-page.active {
+    display: block;
+}
