@@ -34,19 +34,41 @@
     window.addEventListener("load", function() {
 
         //store tabs variables
+        const queryString = window.location.hash;
+
 
         var tabs = document.querySelectorAll(".nav-tab-wrapper > a");
         for (let i = 0; i < tabs.length; i++) {
             tabs[i].addEventListener("click", switchTab);
+
+            //console.log(tabs[i].getAttribute("href"));
+            if (tabs[i].getAttribute("href") == queryString) {
+                tabs[i].classList.add("nav-tab-active");
+            }
         }
+
+        if (queryString != "") {
+            document.querySelector(".nav-tab-wrapper a").classList.remove("nav-tab-active");
+
+            document.querySelector(".settings-form-page").classList.remove("active");
+            document.querySelector(queryString).classList.add("active");
+        } else {
+            document.querySelector(".nav-tab-wrapper> a").classList.add("nav-tab-active");
+            document.querySelector(".settings-form-page").classList.add("active");
+        }
+        // console.log(queryString);
     })
 
     function switchTab(event) {
 
         //console.log(event);
+        var tabList = document.querySelectorAll(".nav-tab-wrapper a");
+        for (let i = 0; i < tabList.length; i++) {
+            tabList[i].classList.remove("nav-tab-active");
+        }
+        //document.querySelectorAll(".nav-tab-wrapper a").classList.remove("nav-tab-active");
 
-        document.querySelector(".nav-tab-wrapper a.nav-tab-active").classList.remove("nav-tab-active");
-        document.querySelector(".settings-form-page.active").classList.remove("active");
+        document.querySelector(".settings-form-page").classList.remove("active");
 
         var clickedTab = event.currentTarget;
         var anchor = event.target;
@@ -55,6 +77,7 @@
 
         //console.log(activePanelID);
         //clickedTab.preventDefault();
+
         clickedTab.classList.add("nav-tab-active");
         document.querySelector(activePanelID).classList.add("active");
     }

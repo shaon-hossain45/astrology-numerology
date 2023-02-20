@@ -49,13 +49,13 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 			$message = '';
 
 
-			if( isset( $_GET['template'] ) && ( $_GET['template'] == 'create' ) ){
-				$this->template_lister_create();
-			}else if( isset( $_GET['action'] ) && ( $_GET['action'] == 'edit' ) ){
-				include_once plugin_dir_path( dirname( __FILE__ ) ) . 'views/audio-page-update.php';
-			}else{
+			//if( isset( $_GET['template'] ) && ( $_GET['template'] == 'create' ) ){
+				//$this->template_lister_create();
+			//}else if( isset( $_GET['action'] ) && ( $_GET['action'] == 'edit' ) ){
+				//include_once plugin_dir_path( dirname( __FILE__ ) ) . 'views/audio-page-update.php';
+			//}else{
 				include_once plugin_dir_path( dirname( __FILE__ ) ) . 'views/astrology-numerology-template-page.php';
-			}
+			//}
 		}
 
 		public function template_lister_create() {
@@ -284,7 +284,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 			<h1 class="wp-heading-inline">Numerology</h1>
 
 			<div id="elementor-template-library-tabs-wrapper" class="nav-tab-wrapper">
-				<a class="nav-tab nav-tab-active" href="#tab-day">Day</a>
+				<a class="nav-tab" href="#tab-day">Day</a>
 				<a class="nav-tab" href="#tab-week">Week</a>
 				<a class="nav-tab" href="#tab-month">Month</a>
 				<a class="nav-tab" href="#tab-year">Year</a>
@@ -297,14 +297,14 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 
 
 
-				<div id="tab-day" class="settings-form-page active">
+				<div id="tab-day" class="settings-form-page">
 					<div class="metabox-holder" id="templatestuff">
 						<div id="post-body">
 							<div id="post-body-content">
 								<div class="normal-sortables">
 									<div id="template_form_meta_box" class="postbox">
 										<div class="postbox-header">
-											<h2 class="hndle">Create Day</h2>
+											<h2 class="hndle">Day Information</h2>
 										</div>
 										<div class="inside">
 											<table cellspacing="2" cellpadding="5" style="width: 100%;" class="form-table">
@@ -341,7 +341,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '1st Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_1st_variation" class="custom-padding" name="numerology_1st_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '1st Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_1st_variation" class="custom-padding" name="numerology_1st_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '1st Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_1st_var_description" id="template_1st_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '1st Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -349,7 +350,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '2nd Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_2nd_variation" class="custom-padding" name="numerology_2nd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '2nd Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_2nd_variation" class="custom-padding" name="numerology_2nd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '2nd Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_2nd_var_description" id="template_2nd_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '2nd Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -357,7 +359,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '3rd Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_3rd_variation" class="custom-padding" name="numerology_3rd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '3rd Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_3rd_variation" class="custom-padding" name="numerology_3rd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '3rd Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_3rd_var_description" id="template_3rd_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '3rd Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -365,7 +368,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '4th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_4th_variation" class="custom-padding" name="numerology_4th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '4th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_4th_variation" class="custom-padding" name="numerology_4th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '4th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_4th_var_description" id="template_4th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '4th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -373,7 +377,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '5th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_5th_variation" class="custom-padding" name="numerology_5th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '5th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_5th_variation" class="custom-padding" name="numerology_5th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '5th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_5th_var_description" id="template_5th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '5th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -381,7 +386,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '6th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_6th_variation" class="custom-padding" name="numerology_6th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '6th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_6th_variation" class="custom-padding" name="numerology_6th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '6th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_6th_var_description" id="template_6th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '6th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -389,7 +395,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '7th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_7th_variation" class="custom-padding" name="numerology_7th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '7th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_7th_variation" class="custom-padding" name="numerology_7th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '7th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_7th_var_description" id="template_7th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '7th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -397,7 +404,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '8th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_8th_variation" class="custom-padding" name="numerology_8th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '8th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_8th_variation" class="custom-padding" name="numerology_8th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '8th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_8th_var_description" id="template_8th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '8th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -405,7 +413,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '9th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_9th_variation" class="custom-padding" name="numerology_9th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '9th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_9th_variation" class="custom-padding" name="numerology_9th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '9th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_9th_var_description" id="template_9th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '9thth Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -444,7 +453,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 								<div class="normal-sortables">
 									<div id="template_form_meta_box" class="postbox">
 										<div class="postbox-header">
-											<h2 class="hndle">Create Week</h2>
+											<h2 class="hndle">Week Information</h2>
 										</div>
 										<div class="inside">
 											<table cellspacing="2" cellpadding="5" style="width: 100%;" class="form-table">
@@ -481,7 +490,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '1st Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_1st_variation" class="custom-padding" name="numerology_1st_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '1st Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_1st_variation" class="custom-padding" name="numerology_1st_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '1st Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_1st_var_description" id="template_1st_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '1st Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -489,7 +499,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '2nd Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_2nd_variation" class="custom-padding" name="numerology_2nd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '2nd Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_2nd_variation" class="custom-padding" name="numerology_2nd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '2nd Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_2nd_var_description" id="template_2nd_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '2nd Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -497,7 +508,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '3rd Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_3rd_variation" class="custom-padding" name="numerology_3rd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '3rd Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_3rd_variation" class="custom-padding" name="numerology_3rd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '3rd Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_3rd_var_description" id="template_3rd_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '3rd Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -505,7 +517,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '4th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_4th_variation" class="custom-padding" name="numerology_4th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '4th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_4th_variation" class="custom-padding" name="numerology_4th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '4th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_4th_var_description" id="template_4th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '4th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -513,7 +526,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '5th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_5th_variation" class="custom-padding" name="numerology_5th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '5th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_5th_variation" class="custom-padding" name="numerology_5th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '5th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_5th_var_description" id="template_5th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '5th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -521,7 +535,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '6th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_6th_variation" class="custom-padding" name="numerology_6th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '6th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_6th_variation" class="custom-padding" name="numerology_6th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '6th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_6th_var_description" id="template_6th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '6th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -529,23 +544,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '7th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_7th_variation" class="custom-padding" name="numerology_7th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '7th Variation Information', 'astrology_numerology' ); ?>">
-														</td>
-													</tr>
-													<tr class="form-field">
-														<th valign="top" scope="row">
-															<label for="title"><?php _e( '8th Variation', 'astrology_numerology' ); ?></label>
-														</th>
-														<td>
-															<input id="numerology_8th_variation" class="custom-padding" name="numerology_8th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '8th Variation Information', 'astrology_numerology' ); ?>">
-														</td>
-													</tr>
-													<tr class="form-field">
-														<th valign="top" scope="row">
-															<label for="title"><?php _e( '9th Variation', 'astrology_numerology' ); ?></label>
-														</th>
-														<td>
-															<input id="numerology_9th_variation" class="custom-padding" name="numerology_9th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '9th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_7th_variation" class="custom-padding" name="numerology_7th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '7th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_7th_var_description" id="template_7th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '7th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -584,7 +584,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 								<div class="normal-sortables">
 									<div id="template_form_meta_box" class="postbox">
 										<div class="postbox-header">
-											<h2 class="hndle">Create Month</h2>
+											<h2 class="hndle">Month Information</h2>
 										</div>
 										<div class="inside">
 											<table cellspacing="2" cellpadding="5" style="width: 100%;" class="form-table">
@@ -615,13 +615,13 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 																wp_editor( $content, $custom_editor_id, $args );
 																?>
 														</td>
-													</tr>
-													<tr class="form-field">
+													</tr><tr class="form-field">
 														<th valign="top" scope="row">
 															<label for="title"><?php _e( '1st Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_1st_variation" class="custom-padding" name="numerology_1st_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '1st Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_1st_variation" class="custom-padding" name="numerology_1st_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '1st Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_1st_var_description" id="template_1st_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '1st Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -629,7 +629,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '2nd Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_2nd_variation" class="custom-padding" name="numerology_2nd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '2nd Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_2nd_variation" class="custom-padding" name="numerology_2nd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '2nd Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_2nd_var_description" id="template_2nd_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '2nd Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -637,7 +638,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '3rd Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_3rd_variation" class="custom-padding" name="numerology_3rd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '3rd Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_3rd_variation" class="custom-padding" name="numerology_3rd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '3rd Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_3rd_var_description" id="template_3rd_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '3rd Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -645,7 +647,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '4th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_4th_variation" class="custom-padding" name="numerology_4th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '4th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_4th_variation" class="custom-padding" name="numerology_4th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '4th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_4th_var_description" id="template_4th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '4th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -653,7 +656,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '5th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_5th_variation" class="custom-padding" name="numerology_5th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '5th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_5th_variation" class="custom-padding" name="numerology_5th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '5th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_5th_var_description" id="template_5th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '5th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -661,7 +665,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '6th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_6th_variation" class="custom-padding" name="numerology_6th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '6th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_6th_variation" class="custom-padding" name="numerology_6th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '6th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_6th_var_description" id="template_6th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '6th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -669,7 +674,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '7th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_7th_variation" class="custom-padding" name="numerology_7th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '7th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_7th_variation" class="custom-padding" name="numerology_7th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '7th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_7th_var_description" id="template_7th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '7th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -677,7 +683,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '8th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_8th_variation" class="custom-padding" name="numerology_8th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '8th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_8th_variation" class="custom-padding" name="numerology_8th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '8th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_8th_var_description" id="template_8th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '8th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -685,7 +692,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '9th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_9th_variation" class="custom-padding" name="numerology_9th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '9th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_9th_variation" class="custom-padding" name="numerology_9th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '9th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_9th_var_description" id="template_9th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '9thth Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -724,7 +732,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 								<div class="normal-sortables">
 									<div id="template_form_meta_box" class="postbox">
 										<div class="postbox-header">
-											<h2 class="hndle">Create Year</h2>
+											<h2 class="hndle">Year Information</h2>
 										</div>
 										<div class="inside">
 											<table cellspacing="2" cellpadding="5" style="width: 100%;" class="form-table">
@@ -755,13 +763,13 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 																wp_editor( $content, $custom_editor_id, $args );
 																?>
 														</td>
-													</tr>
-													<tr class="form-field">
+													</tr><tr class="form-field">
 														<th valign="top" scope="row">
 															<label for="title"><?php _e( '1st Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_1st_variation" class="custom-padding" name="numerology_1st_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '1st Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_1st_variation" class="custom-padding" name="numerology_1st_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '1st Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_1st_var_description" id="template_1st_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '1st Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -769,7 +777,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '2nd Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_2nd_variation" class="custom-padding" name="numerology_2nd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '2nd Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_2nd_variation" class="custom-padding" name="numerology_2nd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '2nd Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_2nd_var_description" id="template_2nd_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '2nd Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -777,7 +786,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '3rd Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_3rd_variation" class="custom-padding" name="numerology_3rd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '3rd Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_3rd_variation" class="custom-padding" name="numerology_3rd_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '3rd Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_3rd_var_description" id="template_3rd_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '3rd Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -785,7 +795,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '4th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_4th_variation" class="custom-padding" name="numerology_4th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '4th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_4th_variation" class="custom-padding" name="numerology_4th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '4th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_4th_var_description" id="template_4th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '4th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -793,7 +804,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '5th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_5th_variation" class="custom-padding" name="numerology_5th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '5th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_5th_variation" class="custom-padding" name="numerology_5th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '5th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_5th_var_description" id="template_5th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '5th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -801,7 +813,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '6th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_6th_variation" class="custom-padding" name="numerology_6th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '6th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_6th_variation" class="custom-padding" name="numerology_6th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '6th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_6th_var_description" id="template_6th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '6th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -809,7 +822,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '7th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_7th_variation" class="custom-padding" name="numerology_7th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '7th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_7th_variation" class="custom-padding" name="numerology_7th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '7th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_7th_var_description" id="template_7th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '7th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -817,7 +831,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '8th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_8th_variation" class="custom-padding" name="numerology_8th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '8th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_8th_variation" class="custom-padding" name="numerology_8th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '8th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_8th_var_description" id="template_8th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '8th Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
@@ -825,7 +840,8 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 															<label for="title"><?php _e( '9th Variation', 'astrology_numerology' ); ?></label>
 														</th>
 														<td>
-															<input id="numerology_9th_variation" class="custom-padding" name="numerology_9th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '9th Variation Information', 'astrology_numerology' ); ?>">
+															<input id="numerology_9th_variation" class="custom-padding" name="numerology_9th_variation" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '9th Variation', 'astrology_numerology' ); ?>">
+															<textarea name="template_9th_var_description" id="template_9th_var_description" rows="3" cols="40" aria-describedby="" spellcheck="false" placeholder="<?php _e( '9thth Variation Description', 'astrology_numerology' ); ?>"></textarea>
 														</td>
 													</tr>
 													<tr class="form-field">
