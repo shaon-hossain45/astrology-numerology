@@ -54,8 +54,16 @@ class Astrology_Numerology_Public {
 
 		$this->public_load_dependencies();
 
+		if ( class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
+			$today = new Astrology_Numerology_Public_Display_Today();
+		}
+
+		if ( class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
+			$tomorrow = new Astrology_Numerology_Public_Display_Tomorrow();
+		}
+
 		if ( class_exists( 'Astrology_Numerology_Public_Display' ) ) {
-			new Astrology_Numerology_Public_Display();
+			new Astrology_Numerology_Public_Display( $today, $tomorrow );
 		}
 	}
 
@@ -72,6 +80,8 @@ class Astrology_Numerology_Public {
 		 * core plugin.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/partials/astrology-numerology-public-display.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/partials/astrology-numerology-public-today.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/partials/astrology-numerology-public-tomorrow.php';
 	}
 
 	/**
@@ -92,6 +102,7 @@ class Astrology_Numerology_Public {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
+		wp_enqueue_style( 'QueryCSS', plugin_dir_url( __FILE__ ) . 'css/vendor/jquery-ui.css', array(), '1.13.2', 'all' );
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/astrology-numerology-public.css', array(), $this->version, 'all' );
 
@@ -116,7 +127,11 @@ class Astrology_Numerology_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/astrology-numerology-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( 'jQueryCore', plugin_dir_url( __FILE__ ) . 'js/vendor/jquery-3.5.1.min.js', array( 'jquery' ), '3.5.1', false );
+		wp_enqueue_script( 'jQueryUI', plugin_dir_url( __FILE__ ) . 'js/vendor/jquery-ui.js', array( 'jquery' ), '1.13.2', false );
+
+		wp_enqueue_script( 'plugin_name', plugin_dir_url( __FILE__ ) . 'js/astrology-numerology-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( 'horoscope_js', plugin_dir_url( __FILE__ ) . 'js/astrology-numerology-public-horoscope.js', array( 'jquery' ), $this->version, true );
 
 	}
 

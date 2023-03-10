@@ -35,7 +35,10 @@
 
         //store tabs variables
         const queryString = window.location.hash;
+        const searchString = window.location.search;
+        //console.log(searchString);
 
+        if(searchString == "?page=numerologys"){
 
         var tabs = document.querySelectorAll(".nav-tab-wrapper > a");
         for (let i = 0; i < tabs.length; i++) {
@@ -47,15 +50,17 @@
             }
         }
 
-        if (queryString != "") {
+        if ( (queryString != "") ) {
             document.querySelector(".nav-tab-wrapper a").classList.remove("nav-tab-active");
 
-            document.querySelector(".settings-form-page").classList.remove("active");
+            document.querySelector(".settings-form").classList.remove("active");
             document.querySelector(queryString).classList.add("active");
         } else {
             document.querySelector(".nav-tab-wrapper> a").classList.add("nav-tab-active");
-            document.querySelector(".settings-form-page").classList.add("active");
+            document.querySelector(".settings-form").classList.add("active");
         }
+
+    }
         // console.log(queryString);
     })
 
@@ -67,8 +72,12 @@
             tabList[i].classList.remove("nav-tab-active");
         }
         //document.querySelectorAll(".nav-tab-wrapper a").classList.remove("nav-tab-active");
-
-        document.querySelector(".settings-form-page").classList.remove("active");
+        
+        var tabpane = document.querySelectorAll(".settings-form");
+        for (let i = 0; i < tabpane.length; i++) {
+            tabpane[i].classList.remove("active");
+        }
+        
 
         var clickedTab = event.currentTarget;
         var anchor = event.target;

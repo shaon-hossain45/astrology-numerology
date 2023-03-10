@@ -29,8 +29,9 @@
      * practising this, we should strive to set a better example in our own work.
      */
 
+    var isIDValid = true;
     var isTitleValid = true;
-    var isDescriptionValid = true;
+
     /**
      * Register form submit
      * @param  {[type]}    [description]
@@ -44,11 +45,28 @@
          * Newsletter description validation
          * @return {[type]} [description]
          */
+
+
+        editorIdValid();
+
+        function editorIdValid() {
+            isIDValid = true;
+            var editorId = $('form#template_submit').find('select[name="template_id"]');
+            var editorIdval = editorId.val();
+
+            if (editorIdval == "0") {
+                isIDValid = false;
+                editorId.addClass("error");
+            } else {
+                editorId.removeClass("error");
+            }
+        }
+
         editorNameValid();
 
         function editorNameValid() {
             isTitleValid = true;
-            var editortitle = $("#template_title");
+            var editortitle = $('form#template_submit').find('input[name="template_title"]');
             var editortitleval = editortitle.val();
 
             if (editortitleval == "") {
@@ -60,7 +78,7 @@
         }
 
         var form = $(this);
-        if (isTitleValid == true) {
+        if (isTitleValid == true && isIDValid == true) {
 
             /**
              * Data passing to the server with ajax

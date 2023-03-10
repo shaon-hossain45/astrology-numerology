@@ -129,7 +129,7 @@ class Astrology_Numerology_Admin {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/astrology-numerology-admin.js', array( 'jquery' ), $this->version, false );
 
-		wp_enqueue_script( 'astrology-numerology-template', plugin_dir_url( __FILE__ ) . 'js/astrology-numerology-admin-template-insert.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( 'astrology-numerology-template', plugin_dir_url( __FILE__ ) . 'js/astrology-numerology-admin-template.js', array( 'jquery' ), $this->version, false );
 		$template_ajax_nonce = wp_create_nonce( 'ajax_nonce_template' );
 
 				wp_localize_script(
@@ -141,6 +141,9 @@ class Astrology_Numerology_Admin {
 						'security' => $template_ajax_nonce,
 					)
 				);
+
+
+				wp_enqueue_script( 'astrology-numerology-numerology', plugin_dir_url( __FILE__ ) . 'js/astrology-numerology-admin-numerology.js', array( 'jquery' ), $this->version, false );
 
 	}
 

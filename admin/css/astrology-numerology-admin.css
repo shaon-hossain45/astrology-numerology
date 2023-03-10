@@ -9,14 +9,23 @@
 
 input.error,
 textarea.error,
-.wp-editor-container.error {
+.wp-editor-container.error, select.error {
     border-color: red !important;
 }
 
-.settings-form-page {
+.settings-form {
     display: none;
 }
 
-.settings-form-page.active {
+.settings-form.active {
     display: block;
+}
+
+#post-body{
+    overflow: hidden;
+}
+
+hr.wp-template-space {
+    margin-top: 30px;
+    margin-bottom: 15px;
 }

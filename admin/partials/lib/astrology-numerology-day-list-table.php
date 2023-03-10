@@ -17,7 +17,7 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 /**
  * Extend WP_List_Table
  */
-class Custom_List_Table_Template extends WP_List_Table {
+class Custom_List_Table_Day extends WP_List_Table {
 
 	/**
 	 * [REQUIRED] You must declare constructor and give some basic params
@@ -27,8 +27,8 @@ class Custom_List_Table_Template extends WP_List_Table {
 
 		parent::__construct(
 			array(
-				'singular' => 'astrologynumerologytemplate',
-				'plural'   => 'astrologynumerologytemplates',
+				'singular' => 'astrologynumerologyday',
+				'plural'   => 'astrologynumerologydays',
 			)
 		);
 	}
@@ -67,12 +67,12 @@ class Custom_List_Table_Template extends WP_List_Table {
 		// Build delete row action.
 		$delete_query_args = array(
 			'page'   => 'astrology_numerology',
-			'action' => 'deletetemplate',
+			'action' => 'deleteday',
 			'id'     => $item['ID'],
 		);
 		$actions           = array(
 			'edit'   => sprintf( '<a href="?page=astrology_numerology&action=edit&id=%s">%s</a>', $item['ID'], __( 'Edit', 'cltd_example' ) ),
-			'delete' => sprintf( '<a href="%1$s">%2$s</a>', esc_url( wp_nonce_url( add_query_arg( $delete_query_args, 'admin.php' ), 'deletetemplate' ) ), _x( 'Delete', 'List table row action', 'wp-list-table-example' ) ),
+			'delete' => sprintf( '<a href="%1$s">%2$s</a>', esc_url( wp_nonce_url( add_query_arg( $delete_query_args, 'admin.php' ), 'deleteday' ) ), _x( 'Delete', 'List table row action', 'wp-list-table-example' ) ),
 		);
 
 		return sprintf(
@@ -107,7 +107,7 @@ class Custom_List_Table_Template extends WP_List_Table {
 			'cb'               => '<input type="checkbox" />', // Render a checkbox instead of text
 			'template_title'  => __( 'Template Title', 'cltd_example' ),
 			'template_description' => __( 'Template Description', 'cltd_example' ),
-			//'template_house' => __( 'Templete House', 'cltd_example' ),
+			//'numerology_house' => __( 'Templete House', 'cltd_example' ),
 		);
 		return $columns;
 	}
@@ -123,7 +123,7 @@ class Custom_List_Table_Template extends WP_List_Table {
 		$sortable_columns = array(
 			'template_title'  => array( 'template_title', true ),
 			'template_description' => array( 'template_description', true ),
-			//'template_house' => array( 'template_house', true ),
+			//'numerology_house' => array( 'numerology_house', true ),
 		);
 		return $sortable_columns;
 	}
@@ -134,14 +134,14 @@ class Custom_List_Table_Template extends WP_List_Table {
 	 * @return [type] [description]
 	 */
 	public function no_items() {
-		_e( 'No astrology numerology template items found.' );
+		_e( 'No astrology numerology day items found.' );
 	}
 	/**
 	 * iTechPublic delete activity
 	 */
 	public static function itechpublic_delete_activity( $data ) {
 		global $wpdb;
-		$table_name = $wpdb->prefix . 'astrology_numerology_template';
+		$table_name = $wpdb->prefix . 'astrology_numerology_day';
 		$results    = $wpdb->delete( $table_name, array( 'ID' => $data ), array( '%d' ) );
 	}
 
@@ -153,7 +153,7 @@ class Custom_List_Table_Template extends WP_List_Table {
 	 */
 	protected function itechpublic_get_filter_count( $data = '' ) {
 		global $wpdb;
-		$table_name = $wpdb->prefix . 'astrology_numerology_template';
+		$table_name = $wpdb->prefix . 'astrology_numerology_day';
 
 		if ( $data == 1 ) {
 			$results = $wpdb->get_var( $wpdb->prepare( "SELECT count(*) FROM $table_name WHERE template_title = %d", 1 ) );
@@ -202,7 +202,7 @@ class Custom_List_Table_Template extends WP_List_Table {
 	 */
 	function get_bulk_actions() {
 		$actions = array(
-			'bulk-deletetemplate'         => 'Delete',
+			'bulk-deleteday'         => 'Delete',
 			//'bulk-edit' => 'Edit',
 		);
 		return $actions;
@@ -216,16 +216,16 @@ class Custom_List_Table_Template extends WP_List_Table {
 	public function process_bulk_action() {
 
 		// Detect when a bulk action is being triggered...
-		if ( 'deletetemplate' === $this->current_action() ) {
+		if ( 'deleteday' === $this->current_action() ) {
 			// In our file that handles the request, verify the nonce.
 			$nonce = esc_attr( $_REQUEST['_wpnonce'] );
 
-			if ( ! wp_verify_nonce( $nonce, 'deletetemplate' ) ) {
+			if ( ! wp_verify_nonce( $nonce, 'deleteday' ) ) {
 				die( 'Go get a life script kiddies' );
 			} else {
 				self::itechpublic_delete_activity( absint( $_REQUEST['id'] ) );
 
-				//add_flash_notice( __( '1 astrology numerology template item permanently deleted.' ), 'success', true );
+				//add_flash_notice( __( '1 astrology numerology day item permanently deleted.' ), 'success', true );
 				$redirect_to = admin_url( 'admin.php?page=astrology_numerology&deleted=true' );
 				wp_redirect( $redirect_to );
 				exit;
@@ -233,7 +233,7 @@ class Custom_List_Table_Template extends WP_List_Table {
 		}
 
 		// If the delete bulk action is triggered
-		if ( 'bulk-deletetemplate' === $this->current_action() ) {
+		if ( 'bulk-deleteday' === $this->current_action() ) {
 			$delete_ids = isset( $_REQUEST['id'] ) ? $_REQUEST['id'] : array();
 			if ( ! empty( $delete_ids ) ) {
 				// loop over the array of record IDs and delete them
@@ -243,9 +243,9 @@ class Custom_List_Table_Template extends WP_List_Table {
 				// Array required for count
 				$counter = count( $_REQUEST['id'] );
 				if ( $counter > 1 ) {
-					$counter = $counter . ' astrology numerology template items';
+					$counter = $counter . ' astrology numerology day items';
 				} else {
-					$counter = $counter . ' astrology numerology template item';
+					$counter = $counter . ' astrology numerology day item';
 				}
 				//add_flash_notice( __( $counter . ' permanently deleted.' ), 'success', true );
 				$redirect_to = admin_url( 'admin.php?page=astrology_numerology&deleted=true' );
@@ -258,7 +258,7 @@ class Custom_List_Table_Template extends WP_List_Table {
 				exit;
 			}
 		}
-		if ( 'email_to_template' === $this->current_action() ) {
+		if ( 'email_to_numerology' === $this->current_action() ) {
 			$select_ids = isset( $_REQUEST['id'] ) ? $_REQUEST['id'] : array();
 			if ( ! empty( $select_ids ) ) {
 				// loop over the array of record IDs and delete them
@@ -277,20 +277,20 @@ class Custom_List_Table_Template extends WP_List_Table {
 	 */
 	// public function itechpublic_sub_wp_mail( $data ) {
 	// 	global $wpdb;
-	// 	$table_name       = $wpdb->prefix . 'astrology_numerology_template';
-	// 	$template_email = $wpdb->get_var( $wpdb->prepare( "SELECT template_email FROM $table_name WHERE ID = %d", $data ) );
+	// 	$table_name       = $wpdb->prefix . 'astrology_numerology_day';
+	// 	$numerology_email = $wpdb->get_var( $wpdb->prepare( "SELECT numerology_email FROM $table_name WHERE ID = %d", $data ) );
 	// 	$site_name        = get_bloginfo( 'name' );
-	// 	$options          = get_option( 'email_template_store' );
+	// 	$options          = get_option( 'email_numerology_store' );
 	// 	$htmltitle        = $options['email_template_title'];
-	// 	$htmlcontent      = $options['email_template_content'];
+	// 	$htmlcontent      = $options['email_numerology_content'];
 
 	// 	$subject = sprintf( __( '[%1$s] %2$s' ), $site_name, $htmltitle );
 	// 	$headers = array( 'Content-Type: text/html; charset=UTF-8', 'From: iTechPublic <https://itechpublic.com>' );
-	// 	$wp_mail = wp_mail( $template_email, $subject, $htmlcontent, $headers );
+	// 	$wp_mail = wp_mail( $numerology_email, $subject, $htmlcontent, $headers );
 
 	// 	if ( ! is_wp_error( $wp_mail ) ) {
 	// 		add_flash_notice( __( 'Email sent successfull.' ), 'success', true );
-	// 		$redirect_to = admin_url( 'admin.php?page=wpaptemplates' );
+	// 		$redirect_to = admin_url( 'admin.php?page=wpapnumerologys' );
 	// 			wp_redirect( $redirect_to );
 	// 			exit;
 	// 	}
@@ -303,7 +303,7 @@ class Custom_List_Table_Template extends WP_List_Table {
 	 */
 	function prepare_items() {
 		global $wpdb;
-		$table_name = $wpdb->prefix . 'astrology_numerology_template'; // do not forget about tables prefix
+		$table_name = $wpdb->prefix . 'astrology_numerology_day'; // do not forget about tables prefix
 
 		$per_page = 10; // constant, how much records will be shown per page
 
