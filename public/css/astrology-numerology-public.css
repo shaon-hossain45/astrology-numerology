@@ -5,7 +5,6 @@
 
 .secHdg {
     text-align: center;
-    font-family: "blacker_pro_displayheavy";
     font-size: 20px;
     font-weight: normal;
     position: relative;
@@ -36,11 +35,6 @@
     top: 2px;
 }
 
-.secHdg a,
-.secHdg .hdgStyle {
-    font-family: "blacker_pro_displayheavy";
-}
-
 .hdgStyle {
     text-transform: uppercase;
     position: relative;
@@ -55,7 +49,6 @@
 }
 
 .hdgStyle span {
-    font-family: "blacker_pro_displayheavy";
     color: #00b1cd;
     font-size: 20px;
     line-height: 25px;
@@ -72,14 +65,12 @@
 .secHdg h2,
 .secHdg h3 {
     text-align: center;
-    font-family: "blacker_pro_displayheavy";
     font-size: 20px;
     font-weight: normal;
     display: inline-block;
 }
 
 .hdgStyle span {
-    font-family: "blacker_pro_displayheavy";
     color: #00b1cd;
     font-size: 20px;
     line-height: 25px;
@@ -95,7 +86,6 @@
     color: #424242;
     font-size: 14px;
     font-weight: 700;
-    font-family: "Lato", sans-serif;
     text-align: center;
     margin-bottom: 25px;
     padding: 0 15%;
@@ -159,7 +149,6 @@
 }
 
 .selectYourHoroscope .horoscopeSunSign li>a span {
-    font-family: "Lato", sans-serif;
     padding-top: 5px;
 }
 
@@ -278,4 +267,23 @@ input[name="datepicker"].error {
 
 ul.horoscopeSunSign li.horoscopeSelect {
     border: 2px solid green;
+}
+
+.horoscope-main h2 {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.horoscope-main h3 {
+    font-size: 26px;
+}
+
+.horoscope-main h4 {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+p.focusline {
+    font-size: 22px;
+    font-weight: bold;
 }

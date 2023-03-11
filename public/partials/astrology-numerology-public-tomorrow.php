@@ -138,8 +138,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 1st house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 1st house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -148,8 +148,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_2 ) ){
                     $expValues = $this->expData($values->house_2);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 2nd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 2nd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -158,8 +158,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_3 ) ){
                     $expValues = $this->expData($values->house_3);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 3rd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 3rd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -168,8 +168,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_4 ) ){
                     $expValues = $this->expData($values->house_4);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 4th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 4th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -178,8 +178,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_5 ) ){
                     $expValues = $this->expData($values->house_5);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 5th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 5th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -188,8 +188,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_6 ) ){
                     $expValues = $this->expData($values->house_6);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 6th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 6th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -198,8 +198,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_7 ) ){
                     $expValues = $this->expData($values->house_7);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 7th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 7th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -208,8 +208,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_8 ) ){
                     $expValues = $this->expData($values->house_8);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 8th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 8th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -218,8 +218,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_9 ) ){
                     $expValues = $this->expData($values->house_9);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 9th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 9th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -228,8 +228,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_10 ) ){
                     $expValues = $this->expData($values->house_10);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 10th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 10th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -238,8 +238,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_11 ) ){
                     $expValues = $this->expData($values->house_11);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 11th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 11th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -248,11 +248,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_12 ) ){
                     $expValues = $this->expData($values->house_12);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 12th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 12th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
+            $output .= html_entity_decode( $values->template_bottom_description );
         
         }
 
@@ -269,8 +270,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 1st house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 1st house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -279,8 +280,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_2 ) ){
                     $expValues = $this->expData($values->house_2);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 2nd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 2nd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -289,8 +290,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_3 ) ){
                     $expValues = $this->expData($values->house_3);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 3rd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 3rd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -299,8 +300,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_4 ) ){
                     $expValues = $this->expData($values->house_4);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 4th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 4th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -309,8 +310,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_5 ) ){
                     $expValues = $this->expData($values->house_5);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 5th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 5th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -319,8 +320,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_6 ) ){
                     $expValues = $this->expData($values->house_6);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 6th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 6th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -329,8 +330,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_7 ) ){
                     $expValues = $this->expData($values->house_7);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 7th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 7th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -339,8 +340,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_8 ) ){
                     $expValues = $this->expData($values->house_8);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 8th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 8th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -349,8 +350,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_9 ) ){
                     $expValues = $this->expData($values->house_9);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 9th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 9th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -359,8 +360,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_10 ) ){
                     $expValues = $this->expData($values->house_10);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 10th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 10th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -369,8 +370,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_11 ) ){
                     $expValues = $this->expData($values->house_11);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 11th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 11th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -379,11 +380,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_12 ) ){
                     $expValues = $this->expData($values->house_12);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 12th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 12th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
+            $output .= html_entity_decode( $values->template_bottom_description );
         
         }
 
@@ -400,8 +402,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 1st house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 1st house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -410,8 +412,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_2 ) ){
                     $expValues = $this->expData($values->house_2);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 2nd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 2nd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -420,8 +422,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_3 ) ){
                     $expValues = $this->expData($values->house_3);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 3rd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 3rd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -430,8 +432,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_4 ) ){
                     $expValues = $this->expData($values->house_4);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 4th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 4th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -440,8 +442,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_5 ) ){
                     $expValues = $this->expData($values->house_5);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 5th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 5th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -450,8 +452,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_6 ) ){
                     $expValues = $this->expData($values->house_6);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 6th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 6th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -460,8 +462,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_7 ) ){
                     $expValues = $this->expData($values->house_7);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 7th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 7th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -470,8 +472,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_8 ) ){
                     $expValues = $this->expData($values->house_8);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 8th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 8th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -480,8 +482,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_9 ) ){
                     $expValues = $this->expData($values->house_9);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 9th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 9th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -490,8 +492,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_10 ) ){
                     $expValues = $this->expData($values->house_10);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 10th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 10th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -500,8 +502,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_11 ) ){
                     $expValues = $this->expData($values->house_11);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 11th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 11th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -510,11 +512,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_12 ) ){
                     $expValues = $this->expData($values->house_12);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 12th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 12th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
+            $output .= html_entity_decode( $values->template_bottom_description );
         
         }
 
@@ -531,8 +534,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 1st house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 1st house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -541,8 +544,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_2 ) ){
                     $expValues = $this->expData($values->house_2);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 2nd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 2nd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -551,8 +554,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_3 ) ){
                     $expValues = $this->expData($values->house_3);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 3rd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 3rd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -561,8 +564,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_4 ) ){
                     $expValues = $this->expData($values->house_4);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 4th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 4th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -571,8 +574,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_5 ) ){
                     $expValues = $this->expData($values->house_5);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 5th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 5th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -581,8 +584,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_6 ) ){
                     $expValues = $this->expData($values->house_6);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 6th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 6th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -591,8 +594,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_7 ) ){
                     $expValues = $this->expData($values->house_7);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 7th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 7th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -601,8 +604,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_8 ) ){
                     $expValues = $this->expData($values->house_8);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 8th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 8th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -611,8 +614,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_9 ) ){
                     $expValues = $this->expData($values->house_9);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 9th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 9th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -621,8 +624,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_10 ) ){
                     $expValues = $this->expData($values->house_10);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 10th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 10th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -631,8 +634,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_11 ) ){
                     $expValues = $this->expData($values->house_11);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 11th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 11th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -641,11 +644,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_12 ) ){
                     $expValues = $this->expData($values->house_12);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 12th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 12th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
+            $output .= html_entity_decode( $values->template_bottom_description );
         
         }
 
@@ -663,8 +667,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 1st house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 1st house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -673,8 +677,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_2 ) ){
                     $expValues = $this->expData($values->house_2);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 2nd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 2nd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -683,8 +687,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_3 ) ){
                     $expValues = $this->expData($values->house_3);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 3rd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 3rd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -693,8 +697,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_4 ) ){
                     $expValues = $this->expData($values->house_4);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 4th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 4th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -703,8 +707,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_5 ) ){
                     $expValues = $this->expData($values->house_5);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 5th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 5th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -713,8 +717,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_6 ) ){
                     $expValues = $this->expData($values->house_6);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 6th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 6th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -723,8 +727,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_7 ) ){
                     $expValues = $this->expData($values->house_7);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 7th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 7th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -733,8 +737,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_8 ) ){
                     $expValues = $this->expData($values->house_8);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 8th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 8th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -743,8 +747,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_9 ) ){
                     $expValues = $this->expData($values->house_9);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 9th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 9th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -753,8 +757,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_10 ) ){
                     $expValues = $this->expData($values->house_10);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 10th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 10th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -763,8 +767,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_11 ) ){
                     $expValues = $this->expData($values->house_11);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 11th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 11th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -773,11 +777,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_12 ) ){
                     $expValues = $this->expData($values->house_12);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 12th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 12th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
+            $output .= html_entity_decode( $values->template_bottom_description );
         
         }
 
@@ -795,8 +800,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 1st house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 1st house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -805,8 +810,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_2 ) ){
                     $expValues = $this->expData($values->house_2);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 2nd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 2nd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -815,8 +820,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_3 ) ){
                     $expValues = $this->expData($values->house_3);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 3rd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 3rd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -825,8 +830,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_4 ) ){
                     $expValues = $this->expData($values->house_4);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 4th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 4th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -835,8 +840,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_5 ) ){
                     $expValues = $this->expData($values->house_5);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 5th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 5th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -845,8 +850,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_6 ) ){
                     $expValues = $this->expData($values->house_6);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 6th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 6th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -855,8 +860,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_7 ) ){
                     $expValues = $this->expData($values->house_7);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 7th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 7th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -865,8 +870,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_8 ) ){
                     $expValues = $this->expData($values->house_8);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 8th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 8th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -875,8 +880,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_9 ) ){
                     $expValues = $this->expData($values->house_9);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 9th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 9th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -885,8 +890,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_10 ) ){
                     $expValues = $this->expData($values->house_10);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 10th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 10th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -895,8 +900,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_11 ) ){
                     $expValues = $this->expData($values->house_11);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 11th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 11th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -905,11 +910,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_12 ) ){
                     $expValues = $this->expData($values->house_12);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 12th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 12th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
+            $output .= html_entity_decode( $values->template_bottom_description );
         
         }
 
@@ -926,8 +932,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 1st house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 1st house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -936,8 +942,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_2 ) ){
                     $expValues = $this->expData($values->house_2);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 2nd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 2nd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -946,8 +952,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_3 ) ){
                     $expValues = $this->expData($values->house_3);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 3rd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 3rd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -956,8 +962,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_4 ) ){
                     $expValues = $this->expData($values->house_4);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 4th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 4th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -966,8 +972,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_5 ) ){
                     $expValues = $this->expData($values->house_5);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 5th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 5th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -976,8 +982,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_6 ) ){
                     $expValues = $this->expData($values->house_6);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 6th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 6th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -986,8 +992,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_7 ) ){
                     $expValues = $this->expData($values->house_7);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 7th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 7th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -996,8 +1002,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_8 ) ){
                     $expValues = $this->expData($values->house_8);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 8th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 8th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1006,8 +1012,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_9 ) ){
                     $expValues = $this->expData($values->house_9);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 9th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 9th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1016,8 +1022,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_10 ) ){
                     $expValues = $this->expData($values->house_10);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 10th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 10th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1026,8 +1032,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_11 ) ){
                     $expValues = $this->expData($values->house_11);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 11th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 11th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1036,11 +1042,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_12 ) ){
                     $expValues = $this->expData($values->house_12);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 12th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 12th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
+            $output .= html_entity_decode( $values->template_bottom_description );
         
         }
 
@@ -1057,8 +1064,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 1st house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 1st house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1067,8 +1074,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_2 ) ){
                     $expValues = $this->expData($values->house_2);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 2nd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 2nd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1077,8 +1084,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_3 ) ){
                     $expValues = $this->expData($values->house_3);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 3rd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 3rd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1087,8 +1094,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_4 ) ){
                     $expValues = $this->expData($values->house_4);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 4th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 4th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1097,8 +1104,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_5 ) ){
                     $expValues = $this->expData($values->house_5);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 5th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 5th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1107,8 +1114,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_6 ) ){
                     $expValues = $this->expData($values->house_6);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 6th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 6th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1117,8 +1124,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_7 ) ){
                     $expValues = $this->expData($values->house_7);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 7th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 7th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1127,8 +1134,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_8 ) ){
                     $expValues = $this->expData($values->house_8);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 8th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 8th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1137,8 +1144,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_9 ) ){
                     $expValues = $this->expData($values->house_9);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 9th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 9th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1147,8 +1154,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_10 ) ){
                     $expValues = $this->expData($values->house_10);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 10th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 10th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1157,8 +1164,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_11 ) ){
                     $expValues = $this->expData($values->house_11);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 11th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 11th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1167,11 +1174,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_12 ) ){
                     $expValues = $this->expData($values->house_12);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 12th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 12th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
+            $output .= html_entity_decode( $values->template_bottom_description );
         
         }
 
@@ -1189,8 +1197,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 1st house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 1st house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1199,8 +1207,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_2 ) ){
                     $expValues = $this->expData($values->house_2);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 2nd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 2nd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1209,8 +1217,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_3 ) ){
                     $expValues = $this->expData($values->house_3);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 3rd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 3rd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1219,8 +1227,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_4 ) ){
                     $expValues = $this->expData($values->house_4);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 4th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 4th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1229,8 +1237,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_5 ) ){
                     $expValues = $this->expData($values->house_5);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 5th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 5th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1239,8 +1247,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_6 ) ){
                     $expValues = $this->expData($values->house_6);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 6th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 6th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1249,8 +1257,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_7 ) ){
                     $expValues = $this->expData($values->house_7);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 7th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 7th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1259,8 +1267,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_8 ) ){
                     $expValues = $this->expData($values->house_8);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 8th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 8th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1269,8 +1277,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_9 ) ){
                     $expValues = $this->expData($values->house_9);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 9th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 9th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1279,8 +1287,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_10 ) ){
                     $expValues = $this->expData($values->house_10);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 10th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 10th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1289,8 +1297,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_11 ) ){
                     $expValues = $this->expData($values->house_11);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 11th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 11th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1299,11 +1307,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_12 ) ){
                     $expValues = $this->expData($values->house_12);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 12th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 12th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
+            $output .= html_entity_decode( $values->template_bottom_description );
         
         }
 
@@ -1321,8 +1330,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 1st house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 1st house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1331,8 +1340,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_2 ) ){
                     $expValues = $this->expData($values->house_2);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 2nd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 2nd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1341,8 +1350,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_3 ) ){
                     $expValues = $this->expData($values->house_3);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 3rd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 3rd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1351,8 +1360,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_4 ) ){
                     $expValues = $this->expData($values->house_4);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 4th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 4th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1361,8 +1370,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_5 ) ){
                     $expValues = $this->expData($values->house_5);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 5th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 5th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1371,8 +1380,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_6 ) ){
                     $expValues = $this->expData($values->house_6);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 6th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 6th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1381,8 +1390,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_7 ) ){
                     $expValues = $this->expData($values->house_7);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 7th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 7th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1391,8 +1400,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_8 ) ){
                     $expValues = $this->expData($values->house_8);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 8th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 8th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1401,8 +1410,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_9 ) ){
                     $expValues = $this->expData($values->house_9);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 9th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 9th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1411,8 +1420,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_10 ) ){
                     $expValues = $this->expData($values->house_10);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 10th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 10th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1421,8 +1430,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_11 ) ){
                     $expValues = $this->expData($values->house_11);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 11th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 11th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1431,11 +1440,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_12 ) ){
                     $expValues = $this->expData($values->house_12);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 12th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 12th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
+            $output .= html_entity_decode( $values->template_bottom_description );
         
         }
 
@@ -1453,8 +1463,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 1st house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 1st house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1463,8 +1473,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_2 ) ){
                     $expValues = $this->expData($values->house_2);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 2nd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 2nd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1473,8 +1483,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_3 ) ){
                     $expValues = $this->expData($values->house_3);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 3rd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 3rd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1483,8 +1493,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_4 ) ){
                     $expValues = $this->expData($values->house_4);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 4th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 4th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1493,8 +1503,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_5 ) ){
                     $expValues = $this->expData($values->house_5);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 5th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 5th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1503,8 +1513,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_6 ) ){
                     $expValues = $this->expData($values->house_6);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 6th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 6th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1513,8 +1523,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_7 ) ){
                     $expValues = $this->expData($values->house_7);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 7th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 7th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1523,8 +1533,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_8 ) ){
                     $expValues = $this->expData($values->house_8);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 8th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 8th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1533,8 +1543,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_9 ) ){
                     $expValues = $this->expData($values->house_9);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 9th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 9th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1543,8 +1553,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_10 ) ){
                     $expValues = $this->expData($values->house_10);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 10th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 10th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1553,8 +1563,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_11 ) ){
                     $expValues = $this->expData($values->house_11);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 11th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 11th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1563,11 +1573,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_12 ) ){
                     $expValues = $this->expData($values->house_12);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 12th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 12th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
+            $output .= html_entity_decode( $values->template_bottom_description );
         
         }
 
@@ -1584,8 +1595,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 1st house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 1st house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1594,8 +1605,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_2 ) ){
                     $expValues = $this->expData($values->house_2);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 2nd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 2nd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1604,8 +1615,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_3 ) ){
                     $expValues = $this->expData($values->house_3);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 3rd house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 3rd house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1614,8 +1625,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_4 ) ){
                     $expValues = $this->expData($values->house_4);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 4th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 4th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1624,8 +1635,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_5 ) ){
                     $expValues = $this->expData($values->house_5);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 5th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 5th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1634,8 +1645,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_6 ) ){
                     $expValues = $this->expData($values->house_6);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 6th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 6th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1644,8 +1655,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_7 ) ){
                     $expValues = $this->expData($values->house_7);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 7th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 7th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1654,8 +1665,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_8 ) ){
                     $expValues = $this->expData($values->house_8);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 8th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 8th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1664,8 +1675,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_9 ) ){
                     $expValues = $this->expData($values->house_9);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 9th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 9th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1674,8 +1685,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_10 ) ){
                     $expValues = $this->expData($values->house_10);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 10th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 10th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1684,8 +1695,8 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_11 ) ){
                     $expValues = $this->expData($values->house_11);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 11th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 11th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
@@ -1694,11 +1705,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Tomorrow' ) ) {
                 if( ! empty($values->house_12 ) ){
                     $expValues = $this->expData($values->house_12);
                     //var_dump($expValues[1]);
-                    $output .= '<p>'.$valuesData.' you are currently in the 12th house</p>';
-                    $output .= '<h4>'.$expValues[0].'</h4>';
+                    $output .= '<p class="focusline">'.$valuesData.' you are currently in the 12th house</p>';
+                    $output .= '<h3>'.$expValues[0].'</h3>';
                     $output .= '<p>'.$expValues[1].'</p>';
                 }
             }
+            $output .= html_entity_decode( $values->template_bottom_description );
 
         }
         $output .='</div>';
