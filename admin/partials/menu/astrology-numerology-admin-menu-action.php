@@ -389,21 +389,21 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 		// Collect data from - form request array
 			$items = array(
 				'ID'              => $itechArray['template_id'],
-				'template_title'  => $itechArray['template_title'],
-				'template_description' => htmlentities( wpautop( $itechArray['template_description'] ) ),
-				'house_1' => $itechArray['template_1st_house_title'].'|'.$itechArray['template_1st_house_description'],
-				'house_2' => $itechArray['template_2nd_house_title'].'|'.$itechArray['template_2nd_house_description'],
-				'house_3' => $itechArray['template_3rd_house_title'].'|'.$itechArray['template_3rd_house_description'],
-				'house_4' => $itechArray['template_4th_house_title'].'|'.$itechArray['template_4th_house_description'],
-				'house_5' => $itechArray['template_5th_house_title'].'|'.$itechArray['template_5th_house_description'],
-				'house_6' => $itechArray['template_6th_house_title'].'|'.$itechArray['template_6th_house_description'],
-				'house_7' => $itechArray['template_7th_house_title'].'|'.$itechArray['template_7th_house_description'],
-				'house_8' => $itechArray['template_8th_house_title'].'|'.$itechArray['template_8th_house_description'],
-				'house_9' => $itechArray['template_9th_house_title'].'|'.$itechArray['template_9th_house_description'],
-				'house_10' => $itechArray['template_10th_house_title'].'|'.$itechArray['template_10th_house_description'],
-				'house_11' => $itechArray['template_11th_house_title'].'|'.$itechArray['template_11th_house_description'],
-				'house_12' => $itechArray['template_12th_house_title'].'|'.$itechArray['template_12th_house_description'],
-				'template_bottom_description' => htmlentities( wpautop( $itechArray['template_bottom_description'] ) )
+				'template_title'  => stripslashes($itechArray['template_title']),
+				'template_description' => htmlentities( wpautop( stripslashes($itechArray['template_description'] ) )),
+				'house_1' => stripslashes($itechArray['template_1st_house_title']).'|'.stripslashes($itechArray['template_1st_house_description']),
+				'house_2' => stripslashes($itechArray['template_2nd_house_title']).'|'.stripslashes($itechArray['template_2nd_house_description']),
+				'house_3' => stripslashes($itechArray['template_3rd_house_title']).'|'.stripslashes($itechArray['template_3rd_house_description']),
+				'house_4' => stripslashes($itechArray['template_4th_house_title']).'|'.stripslashes($itechArray['template_4th_house_description']),
+				'house_5' => stripslashes($itechArray['template_5th_house_title']).'|'.stripslashes($itechArray['template_5th_house_description']),
+				'house_6' => stripslashes($itechArray['template_6th_house_title']).'|'.stripslashes($itechArray['template_6th_house_description']),
+				'house_7' => stripslashes($itechArray['template_7th_house_title']).'|'.stripslashes($itechArray['template_7th_house_description']),
+				'house_8' => stripslashes($itechArray['template_8th_house_title']).'|'.stripslashes($itechArray['template_8th_house_description']),
+				'house_9' => stripslashes($itechArray['template_9th_house_title']).'|'.stripslashes($itechArray['template_9th_house_description']),
+				'house_10' => stripslashes($itechArray['template_10th_house_title']).'|'.stripslashes($itechArray['template_10th_house_description']),
+				'house_11' => stripslashes($itechArray['template_11th_house_title']).'|'.stripslashes($itechArray['template_11th_house_description']),
+				'house_12' => stripslashes($itechArray['template_12th_house_title']).'|'.stripslashes($itechArray['template_12th_house_description']),
+				'template_bottom_description' => htmlentities( wpautop( stripslashes($itechArray['template_bottom_description']) ) )
 			);
 
 		// validate data, and if all ok save item to database
@@ -1279,18 +1279,18 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 		// Collect data from - form request array
 			$items = array(
 				'ID'          => 1,
-				'template_title'  => $itechArray['template_title'],
-				'template_description' => htmlentities( wpautop( $itechArray['template_description_day'] ) ),
-				'variation_1' => $itechArray['numerology_1st_variation'].'|'.$itechArray['numerology_1st_var_description'],
-				'variation_2' => $itechArray['numerology_2nd_variation'].'|'.$itechArray['numerology_2nd_var_description'],
-				'variation_3' => $itechArray['numerology_3rd_variation'].'|'.$itechArray['numerology_3rd_var_description'],
-				'variation_4' => $itechArray['numerology_4th_variation'].'|'.$itechArray['numerology_4th_var_description'],
-				'variation_5' => $itechArray['numerology_5th_variation'].'|'.$itechArray['numerology_5th_var_description'],
-				'variation_6' => $itechArray['numerology_6th_variation'].'|'.$itechArray['numerology_6th_var_description'],
-				'variation_7' => $itechArray['numerology_7th_variation'].'|'.$itechArray['numerology_7th_var_description'],
-				'variation_8' => $itechArray['numerology_8th_variation'].'|'.$itechArray['numerology_8th_var_description'],
-				'variation_9' => $itechArray['numerology_9th_variation'].'|'.$itechArray['numerology_9th_var_description'],
-				'template_bottom_description' => htmlentities( wpautop( $itechArray['template_bottom_description_day'] ) )
+				'template_title'  => stripslashes($itechArray['template_title']),
+				'template_description' => htmlentities( wpautop( stripslashes($itechArray['template_description_day']) ) ),
+				'variation_1' => stripslashes($itechArray['numerology_1st_variation']).'|'.stripslashes($itechArray['numerology_1st_var_description']),
+				'variation_2' => stripslashes($itechArray['numerology_2nd_variation']).'|'.stripslashes($itechArray['numerology_2nd_var_description']),
+				'variation_3' => stripslashes($itechArray['numerology_3rd_variation']).'|'.stripslashes($itechArray['numerology_3rd_var_description']),
+				'variation_4' => stripslashes($itechArray['numerology_4th_variation']).'|'.stripslashes($itechArray['numerology_4th_var_description']),
+				'variation_5' => stripslashes($itechArray['numerology_5th_variation']).'|'.stripslashes($itechArray['numerology_5th_var_description']),
+				'variation_6' => stripslashes($itechArray['numerology_6th_variation']).'|'.stripslashes($itechArray['numerology_6th_var_description']),
+				'variation_7' => stripslashes($itechArray['numerology_7th_variation']).'|'.stripslashes($itechArray['numerology_7th_var_description']),
+				'variation_8' => stripslashes($itechArray['numerology_8th_variation']).'|'.stripslashes($itechArray['numerology_8th_var_description']),
+				'variation_9' => stripslashes($itechArray['numerology_9th_variation']).'|'.stripslashes($itechArray['numerology_9th_var_description']),
+				'template_bottom_description' => htmlentities( wpautop( stripslashes($itechArray['template_bottom_description_day']) ) )
 			);
 
 		// validate data, and if all ok save item to database
@@ -1349,16 +1349,16 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 		// Collect data from - form request array
 			$items = array(
 				'ID'          => 1,
-				'template_title'  => $itechArray['template_title'],
-				'template_description' => htmlentities( wpautop( $itechArray['template_description_week'] ) ),
-				'variation_1' => $itechArray['numerology_1st_variation'].'|'.$itechArray['numerology_1st_var_description'],
-				'variation_2' => $itechArray['numerology_2nd_variation'].'|'.$itechArray['numerology_2nd_var_description'],
-				'variation_3' => $itechArray['numerology_3rd_variation'].'|'.$itechArray['numerology_3rd_var_description'],
-				'variation_4' => $itechArray['numerology_4th_variation'].'|'.$itechArray['numerology_4th_var_description'],
-				'variation_5' => $itechArray['numerology_5th_variation'].'|'.$itechArray['numerology_5th_var_description'],
-				'variation_6' => $itechArray['numerology_6th_variation'].'|'.$itechArray['numerology_6th_var_description'],
-				'variation_7' => $itechArray['numerology_7th_variation'].'|'.$itechArray['numerology_7th_var_description'],
-				'template_bottom_description' => htmlentities( wpautop( $itechArray['template_bottom_description_week'] ) )
+				'template_title'  => stripslashes($itechArray['template_title']),
+				'template_description' => htmlentities( wpautop( stripslashes($itechArray['template_description_week']) ) ),
+				'variation_1' => stripslashes($itechArray['numerology_1st_variation']).'|'.stripslashes($itechArray['numerology_1st_var_description']),
+				'variation_2' => stripslashes($itechArray['numerology_2nd_variation']).'|'.stripslashes($itechArray['numerology_2nd_var_description']),
+				'variation_3' => stripslashes($itechArray['numerology_3rd_variation']).'|'.stripslashes($itechArray['numerology_3rd_var_description']),
+				'variation_4' => stripslashes($itechArray['numerology_4th_variation']).'|'.stripslashes($itechArray['numerology_4th_var_description']),
+				'variation_5' => stripslashes($itechArray['numerology_5th_variation']).'|'.stripslashes($itechArray['numerology_5th_var_description']),
+				'variation_6' => stripslashes($itechArray['numerology_6th_variation']).'|'.stripslashes($itechArray['numerology_6th_var_description']),
+				'variation_7' => stripslashes($itechArray['numerology_7th_variation']).'|'.stripslashes($itechArray['numerology_7th_var_description']),
+				'template_bottom_description' => htmlentities( wpautop( stripslashes($itechArray['template_bottom_description_week'] ) ))
 			);
 
 		// validate data, and if all ok save item to database
@@ -1417,18 +1417,18 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 		// Collect data from - form request array
 			$items = array(
 				'ID'          => 1,
-				'template_title'  => $itechArray['template_title'],
-				'template_description' => htmlentities( wpautop( $itechArray['template_description_month'] ) ),
-				'variation_1' => $itechArray['numerology_1st_variation'].'|'.$itechArray['numerology_1st_var_description'],
-				'variation_2' => $itechArray['numerology_2nd_variation'].'|'.$itechArray['numerology_2nd_var_description'],
-				'variation_3' => $itechArray['numerology_3rd_variation'].'|'.$itechArray['numerology_3rd_var_description'],
-				'variation_4' => $itechArray['numerology_4th_variation'].'|'.$itechArray['numerology_4th_var_description'],
-				'variation_5' => $itechArray['numerology_5th_variation'].'|'.$itechArray['numerology_5th_var_description'],
-				'variation_6' => $itechArray['numerology_6th_variation'].'|'.$itechArray['numerology_6th_var_description'],
-				'variation_7' => $itechArray['numerology_7th_variation'].'|'.$itechArray['numerology_7th_var_description'],
-				'variation_8' => $itechArray['numerology_8th_variation'].'|'.$itechArray['numerology_8th_var_description'],
-				'variation_9' => $itechArray['numerology_9th_variation'].'|'.$itechArray['numerology_9th_var_description'],
-				'template_bottom_description' => htmlentities( wpautop( $itechArray['template_bottom_description_month'] ) )
+				'template_title'  => stripslashes($itechArray['template_title']),
+				'template_description' => htmlentities( wpautop( stripslashes($itechArray['template_description_month']) ) ),
+				'variation_1' => stripslashes($itechArray['numerology_1st_variation']).'|'.stripslashes($itechArray['numerology_1st_var_description']),
+				'variation_2' => stripslashes($itechArray['numerology_2nd_variation']).'|'.stripslashes($itechArray['numerology_2nd_var_description']),
+				'variation_3' => stripslashes($itechArray['numerology_3rd_variation']).'|'.stripslashes($itechArray['numerology_3rd_var_description']),
+				'variation_4' => stripslashes($itechArray['numerology_4th_variation']).'|'.stripslashes($itechArray['numerology_4th_var_description']),
+				'variation_5' => stripslashes($itechArray['numerology_5th_variation']).'|'.stripslashes($itechArray['numerology_5th_var_description']),
+				'variation_6' => stripslashes($itechArray['numerology_6th_variation']).'|'.stripslashes($itechArray['numerology_6th_var_description']),
+				'variation_7' => stripslashes($itechArray['numerology_7th_variation']).'|'.stripslashes($itechArray['numerology_7th_var_description']),
+				'variation_8' => stripslashes($itechArray['numerology_8th_variation']).'|'.stripslashes($itechArray['numerology_8th_var_description']),
+				'variation_9' => stripslashes($itechArray['numerology_9th_variation']).'|'.stripslashes($itechArray['numerology_9th_var_description']),
+				'template_bottom_description' => htmlentities( wpautop( stripslashes($itechArray['template_bottom_description_month']) ) )
 			);
 
 		// validate data, and if all ok save item to database
@@ -1486,18 +1486,18 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 		// Collect data from - form request array
 			$items = array(
 				'ID'          => 1,
-				'template_title'  => $itechArray['template_title'],
-				'template_description' => htmlentities( wpautop( $itechArray['template_description_year'] ) ),
-				'variation_1' => $itechArray['numerology_1st_variation'].'|'.$itechArray['numerology_1st_var_description'],
-				'variation_2' => $itechArray['numerology_2nd_variation'].'|'.$itechArray['numerology_2nd_var_description'],
-				'variation_3' => $itechArray['numerology_3rd_variation'].'|'.$itechArray['numerology_3rd_var_description'],
-				'variation_4' => $itechArray['numerology_4th_variation'].'|'.$itechArray['numerology_4th_var_description'],
-				'variation_5' => $itechArray['numerology_5th_variation'].'|'.$itechArray['numerology_5th_var_description'],
-				'variation_6' => $itechArray['numerology_6th_variation'].'|'.$itechArray['numerology_6th_var_description'],
-				'variation_7' => $itechArray['numerology_7th_variation'].'|'.$itechArray['numerology_7th_var_description'],
-				'variation_8' => $itechArray['numerology_8th_variation'].'|'.$itechArray['numerology_8th_var_description'],
-				'variation_9' => $itechArray['numerology_9th_variation'].'|'.$itechArray['numerology_9th_var_description'],
-				'template_bottom_description' => htmlentities( wpautop( $itechArray['template_bottom_description_year'] ) )
+				'template_title'  => stripslashes($itechArray['template_title']),
+				'template_description' => htmlentities( wpautop( stripslashes($itechArray['template_description_year']) ) ),
+				'variation_1' => stripslashes($itechArray['numerology_1st_variation']).'|'.stripslashes($itechArray['numerology_1st_var_description']),
+				'variation_2' => stripslashes($itechArray['numerology_2nd_variation']).'|'.stripslashes($itechArray['numerology_2nd_var_description']),
+				'variation_3' => stripslashes($itechArray['numerology_3rd_variation']).'|'.stripslashes($itechArray['numerology_3rd_var_description']),
+				'variation_4' => stripslashes($itechArray['numerology_4th_variation']).'|'.stripslashes($itechArray['numerology_4th_var_description']),
+				'variation_5' => stripslashes($itechArray['numerology_5th_variation']).'|'.stripslashes($itechArray['numerology_5th_var_description']),
+				'variation_6' => stripslashes($itechArray['numerology_6th_variation']).'|'.stripslashes($itechArray['numerology_6th_var_description']),
+				'variation_7' => stripslashes($itechArray['numerology_7th_variation']).'|'.stripslashes($itechArray['numerology_7th_var_description']),
+				'variation_8' => stripslashes($itechArray['numerology_8th_variation']).'|'.stripslashes($itechArray['numerology_8th_var_description']),
+				'variation_9' => stripslashes($itechArray['numerology_9th_variation']).'|'.stripslashes($itechArray['numerology_9th_var_description']),
+				'template_bottom_description' => htmlentities( wpautop( stripslashes($itechArray['template_bottom_description_year']) ) )
 			);
 
 		// validate data, and if all ok save item to database
@@ -1556,16 +1556,16 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 		// Collect data from - form request array
 			$items = array(
 				'ID'          => 1,
-				'template_title'  => $itechArray['template_title'],
-				'template_description' => htmlentities( wpautop( $itechArray['template_description_energyday'] ) ),
-				'variation_1' => $itechArray['numerology_1st_variation'].'|'.$itechArray['numerology_1st_var_description'],
-				'variation_2' => $itechArray['numerology_2nd_variation'].'|'.$itechArray['numerology_2nd_var_description'],
-				'variation_3' => $itechArray['numerology_3rd_variation'].'|'.$itechArray['numerology_3rd_var_description'],
-				'variation_4' => $itechArray['numerology_4th_variation'].'|'.$itechArray['numerology_4th_var_description'],
-				'variation_5' => $itechArray['numerology_5th_variation'].'|'.$itechArray['numerology_5th_var_description'],
-				'variation_6' => $itechArray['numerology_6th_variation'].'|'.$itechArray['numerology_6th_var_description'],
-				'variation_7' => $itechArray['numerology_7th_variation'].'|'.$itechArray['numerology_7th_var_description'],
-				'template_bottom_description' => htmlentities( wpautop( $itechArray['template_bottom_description_energyday'] ) )
+				'template_title'  => stripslashes($itechArray['template_title']),
+				'template_description' => htmlentities( wpautop( stripslashes($itechArray['template_description_energyday']) ) ),
+				'variation_1' => stripslashes($itechArray['numerology_1st_variation']).'|'.stripslashes($itechArray['numerology_1st_var_description']),
+				'variation_2' => stripslashes($itechArray['numerology_2nd_variation']).'|'.stripslashes($itechArray['numerology_2nd_var_description']),
+				'variation_3' => stripslashes($itechArray['numerology_3rd_variation']).'|'.stripslashes($itechArray['numerology_3rd_var_description']),
+				'variation_4' => stripslashes($itechArray['numerology_4th_variation']).'|'.stripslashes($itechArray['numerology_4th_var_description']),
+				'variation_5' => stripslashes($itechArray['numerology_5th_variation']).'|'.stripslashes($itechArray['numerology_5th_var_description']),
+				'variation_6' => stripslashes($itechArray['numerology_6th_variation']).'|'.stripslashes($itechArray['numerology_6th_var_description']),
+				'variation_7' => stripslashes($itechArray['numerology_7th_variation']).'|'.stripslashes($itechArray['numerology_7th_var_description']),
+				'template_bottom_description' => htmlentities( wpautop( stripslashes($itechArray['template_bottom_description_energyday']) ) )
 			);
 
 		// validate data, and if all ok save item to database
@@ -1624,21 +1624,21 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 		// Collect data from - form request array
 			$items = array(
 				'ID'          => 1,
-				'template_title'  => $itechArray['template_title'],
-				'template_description' => htmlentities( wpautop( $itechArray['template_description_powermercurymonth'] ) ),
-				'variation_1' => $itechArray['numerology_1st_variation'].'|'.$itechArray['numerology_1st_var_description'],
-				'variation_2' => $itechArray['numerology_2nd_variation'].'|'.$itechArray['numerology_2nd_var_description'],
-				'variation_3' => $itechArray['numerology_3rd_variation'].'|'.$itechArray['numerology_3rd_var_description'],
-				'variation_4' => $itechArray['numerology_4th_variation'].'|'.$itechArray['numerology_4th_var_description'],
-				'variation_5' => $itechArray['numerology_5th_variation'].'|'.$itechArray['numerology_5th_var_description'],
-				'variation_6' => $itechArray['numerology_6th_variation'].'|'.$itechArray['numerology_6th_var_description'],
-				'variation_7' => $itechArray['numerology_7th_variation'].'|'.$itechArray['numerology_7th_var_description'],
-				'variation_8' => $itechArray['numerology_8th_variation'].'|'.$itechArray['numerology_8th_var_description'],
-				'variation_9' => $itechArray['numerology_9th_variation'].'|'.$itechArray['numerology_9th_var_description'],
-				'variation_10' => $itechArray['numerology_10th_variation'].'|'.$itechArray['numerology_10th_var_description'],
-				'variation_11' => $itechArray['numerology_11th_variation'].'|'.$itechArray['numerology_11th_var_description'],
-				'variation_12' => $itechArray['numerology_12th_variation'].'|'.$itechArray['numerology_12th_var_description'],
-				'template_bottom_description' => htmlentities( wpautop( $itechArray['template_bottom_description_powermercurymonth'] ) )
+				'template_title'  => stripslashes($itechArray['template_title']),
+				'template_description' => htmlentities( wpautop( stripslashes($itechArray['template_description_powermercurymonth']) ) ),
+				'variation_1' => stripslashes($itechArray['numerology_1st_variation']).'|'.stripslashes($itechArray['numerology_1st_var_description']),
+				'variation_2' => stripslashes($itechArray['numerology_2nd_variation']).'|'.stripslashes($itechArray['numerology_2nd_var_description']),
+				'variation_3' => stripslashes($itechArray['numerology_3rd_variation']).'|'.stripslashes($itechArray['numerology_3rd_var_description']),
+				'variation_4' => stripslashes($itechArray['numerology_4th_variation']).'|'.stripslashes($itechArray['numerology_4th_var_description']),
+				'variation_5' => stripslashes($itechArray['numerology_5th_variation']).'|'.stripslashes($itechArray['numerology_5th_var_description']),
+				'variation_6' => stripslashes($itechArray['numerology_6th_variation']).'|'.stripslashes($itechArray['numerology_6th_var_description']),
+				'variation_7' => stripslashes($itechArray['numerology_7th_variation']).'|'.stripslashes($itechArray['numerology_7th_var_description']),
+				'variation_8' => stripslashes($itechArray['numerology_8th_variation']).'|'.stripslashes($itechArray['numerology_8th_var_description']),
+				'variation_9' => stripslashes($itechArray['numerology_9th_variation']).'|'.stripslashes($itechArray['numerology_9th_var_description']),
+				'variation_10' => stripslashes($itechArray['numerology_10th_variation']).'|'.stripslashes($itechArray['numerology_10th_var_description']),
+				'variation_11' => stripslashes($itechArray['numerology_11th_variation']).'|'.stripslashes($itechArray['numerology_11th_var_description']),
+				'variation_12' => stripslashes($itechArray['numerology_12th_variation']).'|'.stripslashes($itechArray['numerology_12th_var_description']),
+				'template_bottom_description' => htmlentities( wpautop( stripslashes($itechArray['template_bottom_description_powermercurymonth']) ) )
 			);
 
 		// validate data, and if all ok save item to database
