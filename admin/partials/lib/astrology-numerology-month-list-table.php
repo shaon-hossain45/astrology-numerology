@@ -71,7 +71,7 @@ class Custom_List_Table_Month extends WP_List_Table {
 			'id'     => $item['ID'],
 		);
 		$actions           = array(
-			'edit'   => sprintf( '<a href="?page=astrology_numerology&action=edit&id=%s">%s</a>', $item['ID'], __( 'Edit', 'cltd_example' ) ),
+			//'edit'   => sprintf( '<a href="?page=astrology_numerology&action=edit&id=%s">%s</a>', $item['ID'], __( 'Edit', 'cltd_example' ) ),
 			'delete' => sprintf( '<a href="%1$s">%2$s</a>', esc_url( wp_nonce_url( add_query_arg( $delete_query_args, 'admin.php' ), 'deletemonth' ) ), _x( 'Delete', 'List table row action', 'wp-list-table-example' ) ),
 		);
 

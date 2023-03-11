@@ -79,7 +79,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display' ) ) {
                 <div class="gamesDiv">
                 <div class="selectYourHoroscope">
                 <p>Choose your zodiac and find out what the future holds </p>
-                <div class="gmaesMar">
+                <div class="gmaesMar" style="display: none;">
                 <form class="horoscopeIdentify" method="post" action="'.esc_url( admin_url( "admin-ajax.php" ) ).'">
 				<input type="hidden" name="action" value="horoscope_identify_submit">
 				<input type="hidden" id="_wpnonce" name="_wpnonce" value="'.wp_create_nonce( 'ajax_nonce_horoscope' ).'">
@@ -129,7 +129,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display' ) ) {
                 <div class="gamesDiv">
                 <div class="selectYourHoroscope">
                 <p>Choose your zodiac and find out what the future holds </p>
-                <div class="gmaesMar">
+                <div class="gmaesMar" style="display: none;">
                 <form class="horoscopeIdentify" method="post" action="'.esc_url( admin_url( "admin-ajax.php" ) ).'">
 				<input type="hidden" name="action" value="horoscope_identify_submit">
 				<input type="hidden" id="_wpnonce" name="_wpnonce" value="'.wp_create_nonce( 'ajax_nonce_horoscope' ).'">

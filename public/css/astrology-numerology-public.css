@@ -103,13 +103,14 @@
     width: 70%;
 }
 
-.selectYourHoroscope .horoscopeSunSign {
+.selectYourHoroscope ul.horoscopeSunSign {
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     margin: 0px;
+    padding: 0px;
 }
 
 .selectYourHoroscope .horoscopeSunSign li {
@@ -148,11 +149,13 @@
 .selectYourHoroscope .horoscopeSunSign li img {
     width: 44px;
     height: 35.2px;
+    margin-bottom: 0px;
 }
 
 .mainContainer img {
     width: 100%;
     display: block;
+    margin-bottom: 0px;
 }
 
 .selectYourHoroscope .horoscopeSunSign li>a span {
