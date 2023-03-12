@@ -75,6 +75,21 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 			</form>
 			</div>
 			<?php
+			$tablePowerMercuryMonth = new Custom_List_Table_PowerMercuryMonth();
+			$tablePowerMercuryMonth->prepare_items();
+			?>
+			<hr class="wp-template-space">
+			<div class="wrap">
+				<div class="icon32 icon32-posts-post" id="icon-edit"><br></div>
+				<!-- add new button remove from here -->
+				<h1 class="wp-heading-inline"><?php _e( 'Numerology Power Mercury Month', 'astrology-numerology' ); ?></h1>
+				<hr class="wp-header-end">
+				<form id="astrology-numerology-table" method="GET">
+					<input type="hidden" name="page" value="<?php echo $_REQUEST['page']; ?>"/>
+					<?php $tablePowerMercuryMonth->display(); ?>
+				</form>
+			</div>
+			<?php
 			$tableDay = new Custom_List_Table_Day();
 			$tableDay->prepare_items();
 			?>
@@ -134,21 +149,6 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 					<?php $tableEnergyDay->display(); ?>
 				</form>
 			</div>
-			<?php
-			$tablePowerMercuryMonth = new Custom_List_Table_PowerMercuryMonth();
-			$tablePowerMercuryMonth->prepare_items();
-			?>
-			<hr class="wp-template-space">
-			<div class="wrap">
-				<div class="icon32 icon32-posts-post" id="icon-edit"><br></div>
-				<!-- add new button remove from here -->
-				<h1 class="wp-heading-inline"><?php _e( 'Numerology Power Mercury Month', 'astrology-numerology' ); ?></h1>
-				<hr class="wp-header-end">
-				<form id="astrology-numerology-table" method="GET">
-					<input type="hidden" name="page" value="<?php echo $_REQUEST['page']; ?>"/>
-					<?php $tablePowerMercuryMonth->display(); ?>
-				</form>
-			</div>
 		<?php
 		}
 
@@ -164,7 +164,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 				<hr class="wp-header-end">
 				<form id="template_submit" method="POST">
 
-				<input type="hidden" name="_wp_http_referer" value="<?php echo home_url(); ?>/wp-admin/admin.php?page=templates">
+				<input type="hidden" name="_wp_http_referer" value="<?php echo home_url(); ?>/wp-admin/admin.php?page=astrology_numerology">
 
 					<div class="metabox-holder" id="templatestuff">
 						<div id="post-body">
@@ -390,7 +390,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 			$items = array(
 				'ID'              => $itechArray['template_id'],
 				'template_title'  => stripslashes($itechArray['template_title']),
-				'template_description' => htmlentities( wpautop( stripslashes($itechArray['template_description'] ) )),
+				'template_description' => htmlentities( wpautop( stripslashes($itechArray['template_description']) )),
 				'house_1' => stripslashes($itechArray['template_1st_house_title']).'|'.stripslashes($itechArray['template_1st_house_description']),
 				'house_2' => stripslashes($itechArray['template_2nd_house_title']).'|'.stripslashes($itechArray['template_2nd_house_description']),
 				'house_3' => stripslashes($itechArray['template_3rd_house_title']).'|'.stripslashes($itechArray['template_3rd_house_description']),
@@ -429,7 +429,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 					$response['url']     = $itechArray['_wp_http_referer'];
 				} else {
 					//add_flash_notice( __( 'There was an error while updating item [Need something modify data]' ), 'error', true );
-					$response['url'] = $itechArray['_wp_http_referer'];
+					//$response['url'] = $itechArray['_wp_http_referer'];
 				}
 
 				$return_success = array(
@@ -464,7 +464,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 
 				<input type="hidden" name="action" value="numerology_dwmy_update_day">
 				<input type="hidden" id="_wpnonce" name="_wpnonce" value="<?php echo wp_create_nonce( 'ajax_nonce_day' ); ?>">
-				<input type="hidden" name="_wp_http_referer" value="<?php echo home_url(); ?>/wp-admin/admin.php?page=numerologys">
+				<input type="hidden" name="_wp_http_referer" value="<?php echo home_url(); ?>/wp-admin/admin.php?page=astrology_numerology">
 
 					<div class="metabox-holder" id="NumerologyDay">
 						<div id="post-body">
@@ -620,7 +620,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 
 				<input type="hidden" name="action" value="numerology_dwmy_update_month">
 				<input type="hidden" id="_wpnonce" name="_wpnonce" value="<?php echo wp_create_nonce( 'ajax_nonce_month' ); ?>">
-				<input type="hidden" name="_wp_http_referer" value="<?php echo home_url(); ?>/wp-admin/admin.php?page=numerologys">
+				<input type="hidden" name="_wp_http_referer" value="<?php echo home_url(); ?>/wp-admin/admin.php?page=astrology_numerology">
 
 					<div class="metabox-holder" id="NumerologyMonth">
 						<div id="post-body">
@@ -777,7 +777,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 
 				<input type="hidden" name="action" value="numerology_dwmy_update_year">
 				<input type="hidden" id="_wpnonce" name="_wpnonce" value="<?php echo wp_create_nonce( 'ajax_nonce_year' ); ?>">
-				<input type="hidden" name="_wp_http_referer" value="<?php echo home_url(); ?>/wp-admin/admin.php?page=numerologys">
+				<input type="hidden" name="_wp_http_referer" value="<?php echo home_url(); ?>/wp-admin/admin.php?page=astrology_numerology">
 
 					<div class="metabox-holder" id="NumerologyYear">
 						<div id="post-body">
@@ -933,7 +933,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 
 				<input type="hidden" name="action" value="numerology_dwmy_update_energyday">
 				<input type="hidden" id="_wpnonce" name="_wpnonce" value="<?php echo wp_create_nonce( 'ajax_nonce_energyday' ); ?>">
-				<input type="hidden" name="_wp_http_referer" value="<?php echo home_url(); ?>/wp-admin/admin.php?page=numerologys">
+				<input type="hidden" name="_wp_http_referer" value="<?php echo home_url(); ?>/wp-admin/admin.php?page=astrology_numerology">
 
 					<div class="metabox-holder" id="NumerologyEnergyDay">
 						<div id="post-body">
@@ -1071,7 +1071,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 
 				<input type="hidden" name="action" value="numerology_dwmy_update_powermercurymonth">
 				<input type="hidden" id="_wpnonce" name="_wpnonce" value="<?php echo wp_create_nonce( 'ajax_nonce_powermercurymonth' ); ?>">
-				<input type="hidden" name="_wp_http_referer" value="<?php echo home_url(); ?>/wp-admin/admin.php?page=numerologys">
+				<input type="hidden" name="_wp_http_referer" value="<?php echo home_url(); ?>/wp-admin/admin.php?page=astrology_numerology">
 
 					<div class="metabox-holder" id="NumerologyPowerMercuryMonth">
 						<div id="post-body">
@@ -1314,7 +1314,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 					$response['url']     = $itechArray['_wp_http_referer'];
 				} else {
 					//add_flash_notice( __( 'There was an error while updating item [Need something modify data]' ), 'error', true );
-					$response['url'] = $itechArray['_wp_http_referer'];
+					//$response['url'] = $itechArray['_wp_http_referer'];
 				}
 
 				$return_success = array(
@@ -1382,7 +1382,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 					$response['url']     = $itechArray['_wp_http_referer'];
 				} else {
 					//add_flash_notice( __( 'There was an error while updating item [Need something modify data]' ), 'error', true );
-					$response['url'] = $itechArray['_wp_http_referer'];
+					//$response['url'] = $itechArray['_wp_http_referer'];
 				}
 
 				$return_success = array(
@@ -1452,7 +1452,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 					$response['url']     = $itechArray['_wp_http_referer'];
 				} else {
 					//add_flash_notice( __( 'There was an error while updating item [Need something modify data]' ), 'error', true );
-					$response['url'] = $itechArray['_wp_http_referer'];
+					//$response['url'] = $itechArray['_wp_http_referer'];
 				}
 
 				$return_success = array(
@@ -1521,7 +1521,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 					$response['url']     = $itechArray['_wp_http_referer'];
 				} else {
 					//add_flash_notice( __( 'There was an error while updating item [Need something modify data]' ), 'error', true );
-					$response['url'] = $itechArray['_wp_http_referer'];
+					//$response['url'] = $itechArray['_wp_http_referer'];
 				}
 
 				$return_success = array(
@@ -1589,7 +1589,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 					$response['url']     = $itechArray['_wp_http_referer'];
 				} else {
 					//add_flash_notice( __( 'There was an error while updating item [Need something modify data]' ), 'error', true );
-					$response['url'] = $itechArray['_wp_http_referer'];
+					//$response['url'] = $itechArray['_wp_http_referer'];
 				}
 
 				$return_success = array(
@@ -1662,7 +1662,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 					$response['url']     = $itechArray['_wp_http_referer'];
 				} else {
 					//add_flash_notice( __( 'There was an error while updating item [Need something modify data]' ), 'error', true );
-					$response['url'] = $itechArray['_wp_http_referer'];
+					//$response['url'] = $itechArray['_wp_http_referer'];
 				}
 
 				$return_success = array(

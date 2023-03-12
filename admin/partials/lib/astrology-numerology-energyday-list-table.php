@@ -156,9 +156,9 @@ class Custom_List_Table_EnergyDay extends WP_List_Table {
 		$table_name = $wpdb->prefix . 'astrology_numerology_energyday';
 
 		if ( $data == 1 ) {
-			$results = $wpdb->get_var( $wpdb->prepare( "SELECT count(*) FROM $table_name WHERE template_title = %d", 1 ) );
+			$results = $wpdb->get_var( $wpdb->prepare( "SELECT count(*) FROM $table_name WHERE template_title = %s", 1 ) );
 		} elseif ( $data == 2 ) {
-			$results = $wpdb->get_var( $wpdb->prepare( "SELECT count(*) FROM $table_name WHERE template_description = %d", 1 ) );
+			$results = $wpdb->get_var( $wpdb->prepare( "SELECT count(*) FROM $table_name WHERE template_description = %s", 1 ) );
 		} else {
 			$results = $wpdb->get_var( "SELECT count(*) FROM $table_name" );
 		}
@@ -318,7 +318,7 @@ class Custom_List_Table_EnergyDay extends WP_List_Table {
 		$this->process_bulk_action();
 
 		// will be used in pagination settings
-		$total_items = $wpdb->get_var( "SELECT COUNT(id) FROM $table_name" );
+		$total_items = $wpdb->get_var( "SELECT COUNT(ID) FROM $table_name" );
 
 		// prepare query params, as usual current page, order by and order direction
 		$paged   = isset( $_REQUEST['paged'] ) ? max( 0, intval( $_REQUEST['paged'] - 1 ) * $per_page ) : 0;
@@ -331,14 +331,14 @@ class Custom_List_Table_EnergyDay extends WP_List_Table {
 		// [REQUIRED] define $items array
 		// notice that last argument is ARRAY_A, so we will retrieve array
 		if ( isset( $_GET['filter'] ) && ( $_GET['filter'] == 'template_title' ) ) {
-			$this->items = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $table_name WHERE template_title= %d ORDER BY $orderby $order LIMIT %d OFFSET %d", 1, $per_page, $paged ), ARRAY_A );
-			$total_items = $wpdb->get_var( $wpdb->prepare( "SELECT count(*) FROM $table_name WHERE template_title = %d", 1 ) );
+			$this->items = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $table_name WHERE template_title= %s ORDER BY $orderby $order LIMIT %d OFFSET %d", 1, $per_page, $paged ), ARRAY_A );
+			$total_items = $wpdb->get_var( $wpdb->prepare( "SELECT count(*) FROM $table_name WHERE template_title = %s", 1 ) );
 		} elseif ( isset( $_GET['filter'] ) && ( $_GET['filter'] == 'template_description' ) ) {
-			$this->items = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $table_name WHERE template_description= %d ORDER BY $orderby $order LIMIT %d OFFSET %d", 1, $per_page, $paged ), ARRAY_A );
-			$total_items = $wpdb->get_var( $wpdb->prepare( "SELECT count(*) FROM $table_name WHERE template_description = %d", 1 ) );
+			$this->items = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $table_name WHERE template_description= %s ORDER BY $orderby $order LIMIT %d OFFSET %d", 1, $per_page, $paged ), ARRAY_A );
+			$total_items = $wpdb->get_var( $wpdb->prepare( "SELECT count(*) FROM $table_name WHERE template_description = %s", 1 ) );
 		} else {
 			$this->items = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $table_name ORDER BY $orderby $order LIMIT %d OFFSET %d", $per_page, $paged ), ARRAY_A );
-			$total_items = $wpdb->get_var( "SELECT COUNT(id) FROM $table_name" );
+			$total_items = $wpdb->get_var( "SELECT COUNT(ID) FROM $table_name" );
 		}
 
 		if ( $user_search_key ) {

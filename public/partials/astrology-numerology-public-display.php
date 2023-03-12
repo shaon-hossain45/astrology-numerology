@@ -164,21 +164,21 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display' ) ) {
         if($atts['label'] == "today-content"){
             echo '<div class="horoscope-main today">';
             echo $this->today->TemplateDataTemplate($atts['data']);
+            echo $this->today->powermercuryDataMonth();
             echo $this->today->numerologyDataDay();
             echo $this->today->numerologyDataMonth();
             echo $this->today->numerologyDataYear();
             echo $this->today->energyDataDay();
-            echo $this->today->powermercuryDataMonth();
             echo '</div>';
         }
         if( $atts['label'] == "tomorrow-content" ){
             echo '<div class="horoscope-main tomorrow">';
             echo $this->tomorrow->TemplateDataTemplate($atts['data']);
+            echo $this->tomorrow->powermercuryDataMonth();
             echo $this->tomorrow->numerologyDataDay();
             echo $this->tomorrow->numerologyDataMonth();
             echo $this->tomorrow->numerologyDataYear();
             echo $this->tomorrow->energyDataDay();
-            echo $this->tomorrow->powermercuryDataMonth();
             echo '</div>';
         }
 

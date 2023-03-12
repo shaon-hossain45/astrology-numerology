@@ -97,7 +97,7 @@
                 if (response['data']['exists']['updated'] == 'success') {
                     window.location.href = response['data']['exists']['url'];
                 } else {
-                    window.location.href = response['data']['exists']['url'];
+                    //window.location.href = response['data']['exists']['url'];
                 }
             }, 'json');
         } else {
