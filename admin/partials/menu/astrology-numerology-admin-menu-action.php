@@ -309,7 +309,7 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 												</tr>
 												<tr class="form-field">
 													<th valign="top" scope="row">
-														<label for="title"><?php _e( '6th House', 'astrology_numerology' ); ?></label>
+														<label for="title"><?php _e( '10th House', 'astrology_numerology' ); ?></label>
 													</th>
 													<td>
 														<input id="template_10th_house_title" class="custom-padding" name="template_10th_house_title" type="text" style="width: 50%" value="" class="code" placeholder="<?php _e( '10th House Title', 'astrology_numerology' ); ?>">
