@@ -284,3 +284,9 @@ p.focusline {
     font-size: 22px;
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+    .selectYourHoroscope .horoscopeSunSign li {
+        width: 100% !important;
+    }
+}
