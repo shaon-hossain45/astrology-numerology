@@ -111,8 +111,8 @@
     border-radius: 4px;
     box-shadow: 0 0 6px 0 rgb(64 64 64 / 16%);
     background-color: #ffffff;
-    width: calc(33% - 20px);
-    height: 95px;
+    width: calc(50% - 20px);
+    height: 305px;
     margin: 10px;
     display: flex;
     display: -webkit-flex;
@@ -126,10 +126,6 @@
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     height: 100%;
     color: #757575;
     font-size: 14px;
@@ -137,8 +133,7 @@
 }
 
 .selectYourHoroscope .horoscopeSunSign li img {
-    width: 80px;
-    /* height: 35.2px; */
+    width: 100%;
     margin-bottom: 0px;
 }
 
@@ -151,6 +146,7 @@
 .selectYourHoroscope .horoscopeSunSign li>a span {
     padding-top: 5px;
     font-size: 20px;
+    color: #000;
 }
 
 .selectYourHoroscope .horoscopeSunSign li span {
