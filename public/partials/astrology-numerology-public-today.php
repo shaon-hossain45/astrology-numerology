@@ -133,7 +133,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
             $output .='<img width="800" height="445" src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology aries.jpg" class="attachment-colormag-featured-image size-colormag-featured-image wp-post-image" alt="" decoding="async">';
 
             $output .='<h2>'.$valuesData.'</h2>';
-
+            $output .= html_entity_decode( stripslashes($values->template_description) );
             if($this->dateCheckRange('21 March', '19 April', $currentDate) == 1){
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
@@ -267,7 +267,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
             $output .='<img width="800" height="445" src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology taurus.jpg" class="attachment-colormag-featured-image size-colormag-featured-image wp-post-image" alt="" decoding="async">';
 
             $output .='<h2>'.$valuesData.'</h2>';
-
+            $output .= html_entity_decode( stripslashes($values->template_description) );
             if($this->dateCheckRange('20 April', '20 May', $currentDate) == 1){
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
@@ -401,7 +401,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
             $output .='<img width="800" height="445" src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology gemini.jpg" class="attachment-colormag-featured-image size-colormag-featured-image wp-post-image" alt="" decoding="async">';
 
             $output .='<h2>'.$valuesData.'</h2>';
-
+            $output .= html_entity_decode( stripslashes($values->template_description) );
             if($this->dateCheckRange('21 May', '21 June', $currentDate) == 1){
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
@@ -535,7 +535,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
             $output .='<img width="800" height="445" src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology cancer.jpg" class="attachment-colormag-featured-image size-colormag-featured-image wp-post-image" alt="" decoding="async">';
 
             $output .='<h2>'.$valuesData.'</h2>';
-
+            $output .= html_entity_decode( stripslashes($values->template_description) );
             if($this->dateCheckRange('22 June', '22 July', $currentDate) == 1){
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
@@ -670,7 +670,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
             $output .='<img width="800" height="445" src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology leo.jpg" class="attachment-colormag-featured-image size-colormag-featured-image wp-post-image" alt="" decoding="async">';
 
             $output .='<h2>'.$valuesData.'</h2>';
-
+            $output .= html_entity_decode( stripslashes($values->template_description) );
             if($this->dateCheckRange('23 July', '22 August', $currentDate) == 1){
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
@@ -805,7 +805,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
             $output .='<img width="800" height="445" src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology virgo.jpg" class="attachment-colormag-featured-image size-colormag-featured-image wp-post-image" alt="" decoding="async">';
 
             $output .='<h2>'.$valuesData.'</h2>';
-
+            $output .= html_entity_decode( stripslashes($values->template_description) );
             if($this->dateCheckRange('23 August', '22 September', $currentDate) == 1){
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
@@ -939,7 +939,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
             $output .='<img width="800" height="445" src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology libra.jpg" class="attachment-colormag-featured-image size-colormag-featured-image wp-post-image" alt="" decoding="async">';
 
             $output .='<h2>'.$valuesData.'</h2>';
-
+            $output .= html_entity_decode( stripslashes($values->template_description) );
             if($this->dateCheckRange('23 September', '23 October', $currentDate) == 1){
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
@@ -1073,7 +1073,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
             $output .='<img width="800" height="445" src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology scorpio.jpg" class="attachment-colormag-featured-image size-colormag-featured-image wp-post-image" alt="" decoding="async">';
 
             $output .='<h2>'.$valuesData.'</h2>';
-
+            $output .= html_entity_decode( stripslashes($values->template_description) );
             if($this->dateCheckRange('24 October', '21 November', $currentDate) == 1){
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
@@ -1208,7 +1208,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
             $output .='<img width="800" height="445" src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology sagittarius.jpg" class="attachment-colormag-featured-image size-colormag-featured-image wp-post-image" alt="" decoding="async">';
 
             $output .='<h2>'.$valuesData.'</h2>';
-
+            $output .= html_entity_decode( stripslashes($values->template_description) );
             if($this->dateCheckRange('22 November', '21 December', $currentDate) == 1){
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
@@ -1343,7 +1343,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
             $output .='<img width="800" height="445" src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology capricorn.jpg" class="attachment-colormag-featured-image size-colormag-featured-image wp-post-image" alt="" decoding="async">';
 
             $output .='<h2>'.$valuesData.'</h2>';
-
+            $output .= html_entity_decode( stripslashes($values->template_description) );
             if($this->dateCheckRange('22 December', '19 January', $currentDate) == 1){
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
@@ -1478,7 +1478,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
             $output .='<img width="800" height="445" src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology aquarius.jpg" class="attachment-colormag-featured-image size-colormag-featured-image wp-post-image" alt="" decoding="async">';
 
             $output .='<h2>'.$valuesData.'</h2>';
-
+            $output .= html_entity_decode( stripslashes($values->template_description) );
             if($this->dateCheckRange('20 January', '18 February', $currentDate) == 1){
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
@@ -1612,7 +1612,7 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display_Today' ) ) {
             $output .='<img width="800" height="445" src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology pisces.jpg" class="attachment-colormag-featured-image size-colormag-featured-image wp-post-image" alt="" decoding="async">';
 
             $output .='<h2>'.$valuesData.'</h2>';
-
+            $output .= html_entity_decode( stripslashes($values->template_description) );
             if($this->dateCheckRange('19 February', '20 March', $currentDate) == 1){
                 if( ! empty($values->house_1 ) ){
                     $expValues = $this->expData($values->house_1);
