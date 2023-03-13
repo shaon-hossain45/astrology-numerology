@@ -1680,9 +1680,9 @@ if ( ! class_exists( 'MenuActionSetup' ) ) {
 		 *
 		 * @return void
 		 */
-		public function astrology_numerology_submenu_page_shortcode() {
-			echo 'sha2';
-		}
+		// public function astrology_numerology_submenu_page_shortcode() {
+		// 	echo 'sha2';
+		// }
 
 
 

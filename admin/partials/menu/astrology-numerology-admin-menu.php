@@ -73,14 +73,14 @@ if ( ! class_exists( 'MenuSetup' ) ) {
 				array( $this->functional, 'astrology_numerology_submenu_page_numerologys' ),
 			);
 
-			add_submenu_page(
-				'astrology_numerology',
-				'Shortcodes',
-				'Shortcodes',
-				'manage_options',
-				'shortcodes',
-				array( $this->functional, 'astrology_numerology_submenu_page_shortcode' ),
-			);
+			// add_submenu_page(
+			// 	'astrology_numerology',
+			// 	'Shortcodes',
+			// 	'Shortcodes',
+			// 	'manage_options',
+			// 	'shortcodes',
+			// 	array( $this->functional, 'astrology_numerology_submenu_page_shortcode' ),
+			// );
 		}
 
 
