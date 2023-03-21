@@ -30,7 +30,7 @@ class Astrology_Numerology_Activator {
 	 * @since    1.0.0
 	 */
 	public static function activate() {
-		self::create_table();
+		self::add_version();
 		self::create_table();
 	}
 
