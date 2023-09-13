@@ -62,12 +62,12 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display' ) ) {
 		//var_dump($atts['type']);
 
         if( $atts['type'] == "today" ){
-
-            echo '<section class="listingPage" data-title="Astrology Today: Get Astrology Predictions and Horoscopes Online" data-url="/astrology" data-story-section="Astrology" data-story-subsection="">
+$outputToday = "";
+            $outputToday .= '<section class="listingPage" data-title="Astrology Today: Get Astrology Predictions and Horoscopes Online" data-url="/astrology" data-story-section="Astrology" data-story-subsection="">
             <nav class="HoroscopeNav__Nav-sc-1472j5k-0 gbbOvV">
             <ul>
-            <li active="true"><a href="'.home_url().'/astrology/today/" title="View todays horoscope readings" data-tracking-link-name="horoscope_today">Today</a></li>
-            <li active="false"><a href="'.home_url().'/astrology/tomorrow/" title="View tomorrows horoscope readings" data-tracking-link-name="horoscope_tomorrow">Tomorrow</a></li>
+            <li active="true"><a href="'.home_url().'/horoscope/today/" title="View todays horoscope readings" data-tracking-link-name="horoscope_today">Today</a></li>
+            <li active="false"><a href="'.home_url().'/horoscope/tomorrow/" title="View tomorrows horoscope readings" data-tracking-link-name="horoscope_tomorrow">Tomorrow</a></li>
             </ul>
             </nav>
             <div class="secHdg">
@@ -92,32 +92,33 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display' ) ) {
                 </div>
                 <section>
                 <ul class="horoscopeSunSign">
-                <li data="1"><a href="'.home_url().'/horoscope/aries-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology aries.jpg" alt="astrology aries" pinger-seen="true"> <span>Aries</span> </a></li>
-                <li data="2"><a href="'.home_url().'/horoscope/taurus-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology taurus.jpg" alt="astrology taurus" pinger-seen="true"> <span>Taurus</span> </a></li>
-                <li data="3"><a href="'.home_url().'/horoscope/gemini-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology gemini.jpg" alt="astrology gemini" pinger-seen="true"> <span>Gemini</span> </a></li>
-                <li data="4"><a href="'.home_url().'/horoscope/cancer-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology cancer.jpg" alt="astrology cancer" pinger-seen="true"> <span>Cancer</span> </a></li>
-                <li data="5"><a href="'.home_url().'/horoscope/leo-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology leo.jpg" alt="astrology leo" pinger-seen="true"> <span>Leo</span> </a></li>
-                <li data="6"><a href="'.home_url().'/horoscope/virgo-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology virgo.jpg" alt="astrology virgo" pinger-seen="true"> <span>Virgo</span> </a></li>
-                <li data="7"><a href="'.home_url().'/horoscope/libra-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology libra.jpg" alt="astrology libra" pinger-seen="true"> <span>Libra</span> </a></li>
-                <li data="8"><a href="'.home_url().'/horoscope/scorpio-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology scorpio.jpg" alt="astrology scorpio" pinger-seen="true"> <span>Scorpio</span> </a></li>
-                <li data="9"><a href="'.home_url().'/horoscope/sagittarius-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology sagittarius.jpg" alt="astrology sagittarius" pinger-seen="true"> <span>Sagittarius</span> </a></li>
-                <li data="10"><a href="'.home_url().'/horoscope/capricorn-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology capricorn.jpg" alt="astrology capricorn" pinger-seen="true"> <span>Capricorn</span> </a></li>
-                <li data="11"><a href="'.home_url().'/horoscope/aquarius-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology aquarius.jpg" alt="astrology aquarius" pinger-seen="true"> <span>Aquarius</span> </a></li>
-                <li data="12"><a href="'.home_url().'/horoscope/pisces-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology pisces.jpg" alt="astrology pisces" pinger-seen="true"> <span>Pisces</span> </a></li>
+                <li data="1"><a href="'.home_url().'/horoscope/today/aries-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology aries.jpg" alt="astrology aries" pinger-seen="true"> <span>Aries</span> </a></li>
+                <li data="2"><a href="'.home_url().'/horoscope/today/taurus-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology taurus.jpg" alt="astrology taurus" pinger-seen="true"> <span>Taurus</span> </a></li>
+                <li data="3"><a href="'.home_url().'/horoscope/today/gemini-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology gemini.jpg" alt="astrology gemini" pinger-seen="true"> <span>Gemini</span> </a></li>
+                <li data="4"><a href="'.home_url().'/horoscope/today/cancer-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology cancer.jpg" alt="astrology cancer" pinger-seen="true"> <span>Cancer</span> </a></li>
+                <li data="5"><a href="'.home_url().'/horoscope/today/leo-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology leo.jpg" alt="astrology leo" pinger-seen="true"> <span>Leo</span> </a></li>
+                <li data="6"><a href="'.home_url().'/horoscope/today/virgo-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology virgo.jpg" alt="astrology virgo" pinger-seen="true"> <span>Virgo</span> </a></li>
+                <li data="7"><a href="'.home_url().'/horoscope/today/libra-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology libra.jpg" alt="astrology libra" pinger-seen="true"> <span>Libra</span> </a></li>
+                <li data="8"><a href="'.home_url().'/horoscope/today/scorpio-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology scorpio.jpg" alt="astrology scorpio" pinger-seen="true"> <span>Scorpio</span> </a></li>
+                <li data="9"><a href="'.home_url().'/horoscope/today/sagittarius-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology sagittarius.jpg" alt="astrology sagittarius" pinger-seen="true"> <span>Sagittarius</span> </a></li>
+                <li data="10"><a href="'.home_url().'/horoscope/today/capricorn-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology capricorn.jpg" alt="astrology capricorn" pinger-seen="true"> <span>Capricorn</span> </a></li>
+                <li data="11"><a href="'.home_url().'/horoscope/today/aquarius-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology aquarius.jpg" alt="astrology aquarius" pinger-seen="true"> <span>Aquarius</span> </a></li>
+                <li data="12"><a href="'.home_url().'/horoscope/today/pisces-horoscope"> <img src="'.plugin_dir_url( dirname( __FILE__ ) ).'images/horoscope-icons/astrology pisces.jpg" alt="astrology pisces" pinger-seen="true"> <span>Pisces</span> </a></li>
                 </ul>
                 </section>
                 </div>
                 </div>
             </section>';
+            return $outputToday;
         }
 
         if( $atts['type'] == "tomorrow" ){
-
-            echo '<section class="listingPage" data-title="Astrology Today: Get Astrology Predictions and Horoscopes Online" data-url="/astrology" data-story-section="Astrology" data-story-subsection="">
+$outputTomorrow = "";
+            $outputTomorrow .= '<section class="listingPage" data-title="Astrology Today: Get Astrology Predictions and Horoscopes Online" data-url="/astrology" data-story-section="Astrology" data-story-subsection="">
             <nav class="HoroscopeNav__Nav-sc-1472j5k-0 gbbOvV">
             <ul>
-            <li active="false"><a href="'.home_url().'/astrology/today/" title="View todays horoscope readings" data-tracking-link-name="horoscope_today">Today</a></li>
-            <li active="true"><a href="'.home_url().'/astrology/tomorrow/" title="View tomorrows horoscope readings" data-tracking-link-name="horoscope_tomorrow">Tomorrow</a></li>
+            <li active="false"><a href="'.home_url().'/horoscope/today/" title="View todays horoscope readings" data-tracking-link-name="horoscope_today">Today</a></li>
+            <li active="true"><a href="'.home_url().'/horoscope/tomorrow/" title="View tomorrows horoscope readings" data-tracking-link-name="horoscope_tomorrow">Tomorrow</a></li>
             </ul>
             </nav>
             <div class="secHdg">
@@ -159,27 +160,32 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display' ) ) {
                 </div>
                 </div>
             </section>';
+            return $outputTomorrow;
 }
 
         if($atts['label'] == "today-content"){
-            echo '<div class="horoscope-main today">';
-            echo $this->today->TemplateDataTemplate($atts['data']);
-            echo $this->today->powermercuryDataMonth();
-            echo $this->today->numerologyDataDay();
-            echo $this->today->numerologyDataMonth();
-            echo $this->today->numerologyDataYear();
-            echo $this->today->energyDataDay();
-            echo '</div>';
+            $outputTod = "";
+            $outputTod .= '<div class="horoscope-main today">';
+            $outputTod .= $this->today->TemplateDataTemplate($atts['data']);
+            $outputTod .= $this->today->powermercuryDataMonth();
+            $outputTod .= $this->today->numerologyDataDay();
+            $outputTod .= $this->today->numerologyDataMonth();
+            $outputTod .= $this->today->numerologyDataYear();
+            $outputTod .= $this->today->energyDataDay();
+            $outputTod.= '</div>';
+            return $outputTod;
         }
         if( $atts['label'] == "tomorrow-content" ){
-            echo '<div class="horoscope-main tomorrow">';
-            echo $this->tomorrow->TemplateDataTemplate($atts['data']);
-            echo $this->tomorrow->powermercuryDataMonth();
-            echo $this->tomorrow->numerologyDataDay();
-            echo $this->tomorrow->numerologyDataMonth();
-            echo $this->tomorrow->numerologyDataYear();
-            echo $this->tomorrow->energyDataDay();
-            echo '</div>';
+            $outputTom = "";
+            $outputTom .=  '<div class="horoscope-main tomorrow">';
+            $outputTom .= $this->tomorrow->TemplateDataTemplate($atts['data']);
+            $outputTom .= $this->tomorrow->powermercuryDataMonth();
+            $outputTom .= $this->tomorrow->numerologyDataDay();
+            $outputTom .= $this->tomorrow->numerologyDataMonth();
+            $outputTom .= $this->tomorrow->numerologyDataYear();
+            $outputTom .= $this->tomorrow->energyDataDay();
+            $outputTom .= '</div>';
+            return $outputTom;
         }
 
 	}
@@ -324,12 +330,6 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display' ) ) {
         $output .= 12;
     }
 
-
-
-
-
-
-
 				// if ( $result ) {
 				// 	//add_flash_notice( __( 'Audio item updated.' ), 'success', true );
 				// 	$response['updated'] = 'success';
@@ -347,7 +347,6 @@ if ( ! class_exists( 'Astrology_Numerology_Public_Display' ) ) {
 				//wp_send_json_success( __( 'Thanks for reporting!', 'reportabug' ) );
 		}
     }
-
 
     }
 }
